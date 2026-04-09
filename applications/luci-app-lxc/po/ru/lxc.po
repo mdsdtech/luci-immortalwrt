@@ -1,64 +1,104 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-23 10:05+0000\n"
-"Last-Translator: st7105 <st7105@gmail.com>\n"
+"PO-Revision-Date: 2026-02-24 17:10+0000\n"
+"Last-Translator: SnIPeRSnIPeR <snipersniper@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationslxc/ru/>\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:18
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:454
 msgid ""
 "<b>Please note:</b> LXC Containers require features not available on OpenWrt "
-"images for devices with small flash.<br />"
+"images for devices with small flash."
 msgstr ""
 "<b>Пожалуйста, обратите внимание:</b> LXC-контейнеры требуют функций, "
-"недоступных в образах OpenWrt для устройств с небольшой флэш-памятью.<br />"
+"недоступных в образах OpenWrt для устройств с небольшой флэш-памятью."
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:29
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:47
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:134
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:148
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:174
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:191
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:245
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:263
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:285
+msgid "Action failed!"
+msgstr "Сбой операции!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:468
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:487
 msgid "Actions"
 msgstr "Действия"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:19
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:455
 msgid "Also you may want to install 'kmod-veth' for optional network support."
 msgstr ""
 "Кроме того, вы можете установить \"kmod-veth\" для дополнительной поддержки "
 "сети."
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:23
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:462
 msgid "Available Containers"
 msgstr "Доступные контейнеры"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:25
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:445
+msgid "Basic Settings"
+msgstr "Основные настройки"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:203
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:65
+msgid "Container creation failed!"
+msgstr "Ошибка создания контейнера!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:254
+msgid "Container is not frozen!"
+msgstr "Контейнер не заморожен!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:236
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:272
+msgid "Container is not running!"
+msgstr "Контейнер не запущен!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:159
+msgid "Container is still running!"
+msgstr "Контейнер все ещё запущен!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:42
+msgid "Container with that name already exists!"
+msgstr "Контейнер с таким именем уже существует!"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:422
 msgid "Containers URL"
 msgstr "URL-адреса контейнеров"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:53
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:497
 msgid "Create"
 msgstr "Создать"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:41
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:481
 msgid "Create New Container"
 msgstr "Создать новый контейнер"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:132
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:79
 msgid "Delete"
 msgstr "Удалить"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:50
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:491
 msgid "Enter new name"
 msgstr "Введите название"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:31
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:428
 msgid "Free Space Threshold"
 msgstr "Порог свободного места"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:37
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:434
 msgid "Free Temp Threshold"
 msgstr "Порог свободного места во временной директории"
 
@@ -66,59 +106,88 @@ msgstr "Порог свободного места во временной ди�
 msgid "Grant UCI access for luci-app-lxc"
 msgstr "Предоставить UCI доступ к luci-app-lxc"
 
-#: applications/luci-app-lxc/luasrc/controller/lxc.lua:31
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:17
+#: applications/luci-app-lxc/root/usr/share/luci/menu.d/luci-app-lxc.json:3
+msgid "LXC Container mgr"
+msgstr "Менеджер контейнеров LXC"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:453
 msgid "LXC Containers"
 msgstr "LXC-контейнеры"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:72
-msgid "Loading"
-msgstr "Загрузка"
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:193
+msgid "LXC configuration updated"
+msgstr "Конфигурация LXC обновлена"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:32
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:287
+msgid "LXC container rebooted"
+msgstr "LXC-контейнер перезагружен"
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:429
 msgid "Minimum required free space for LXC Container creation in KB"
 msgstr ""
 "Минимальное свободное пространство, необходимое для создания LXC-контейнера "
-"в КБ"
+"в Кб"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:38
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:435
 msgid "Minimum required free temp space for LXC Container creation in KB"
 msgstr ""
 "Минимальное временное свободное пространство, необходимое для создания LXC-"
-"контейнера в КБ"
+"контейнера в Кб"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:27
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:45
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:466
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:485
 msgid "Name"
 msgstr "Название"
 
-#: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:22
-msgid "Options"
-msgstr "Настройки"
+#: applications/luci-app-lxc/root/usr/share/luci/menu.d/luci-app-lxc.json:16
+msgid "Overview"
+msgstr "Обзор"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:130
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:300
+msgid "Please select another containers URL."
+msgstr "Выберите другой URL контейнера."
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:77
 msgid "Start"
 msgstr "Запустить"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:28
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:467
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:486
 msgid "Status"
 msgstr "Статус"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:131
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:78
 msgid "Stop"
-msgstr "Остановить"
+msgstr "Стоп"
 
-#: applications/luci-app-lxc/luasrc/view/lxc.htm:46
-msgid "Template"
-msgstr "Шаблон"
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:34
+msgid "Template download in progress, please be patient!"
+msgstr "Выполняется загрузка шаблона, пожалуйста, подождите!"
 
-#~ msgid "Enable SSL"
-#~ msgstr "Включить SSL"
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:54
+msgid "The Name field must not be empty!"
+msgstr "Поле «Имя» не должно быть пустым!"
 
-#~ msgid ""
-#~ "Enable optional SSL encryption support. This requires additional packages "
-#~ "like 'wget', 'ca-certificates', 'gnupg' and 'gnupg-utils'."
-#~ msgstr ""
-#~ "Включить необязательную поддержку шифрования SSL. Это требуется некоторым "
-#~ "дополнительным пакетам, например: 'wget', 'ca-certificates', 'gnupg' и "
-#~ "'gnupg-utils'."
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:294
+msgid "There are no containers available yet."
+msgstr "Доступных контейнеров пока нет."
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:299
+msgid "There are no templates for your architecture available."
+msgstr "Для вашей архитектуры нет доступных шаблонов."
+
+#: applications/luci-app-lxc/htdocs/luci-static/resources/view/lxc/overview.js:162
+msgid ""
+"This will completely remove a stopped LXC container from disk. Are you sure?"
+msgstr ""
+"Это действие полностью удалит остановленный LXC-контейнер с диска. Вы "
+"уверены?"
+
+#~ msgid "Loading"
+#~ msgstr "Загрузка"
+
+#~ msgid "Options"
+#~ msgstr "Настройки"
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"

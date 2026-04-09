@@ -386,10 +386,7 @@ msgid "Speed limit up enabled"
 msgstr "上り速度制限機能を有効にする"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:179
-msgid ""
-"This is documented on <a href=\"https://www.irif.fr/~jch/software/bittorrent/"
-"tcp-congestion-control.html\" target=\"_blank\" rel=\"noreferrer noopener"
-"\">tcp-congestion-control</a>."
+msgid "This is documented on %s."
 msgstr ""
 
 #: applications/luci-app-transmission/root/usr/share/luci/menu.d/luci-app-transmission.json:3
@@ -430,9 +427,3 @@ msgstr ""
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:167
 msgid "uTP enabled"
 msgstr "uTP を有効にする"
-
-#~ msgid "Forced"
-#~ msgstr "強制する"
-
-#~ msgid "Peer socket tos"
-#~ msgstr "ピアソケットのTOS"

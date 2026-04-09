@@ -2,25 +2,34 @@
 	"luci-app-banip": {
 		"description": "Grant access to LuCI app banIP",
 		"write": {
+			"uci": [
+				"banip"
+			],
 			"file": {
 				"/etc/banip/*": [
+					"read"
+				],
+				"/etc/banip/banip.allowlist": [
 					"read",
 					"write"
 				],
-				"/etc/banip/banip.allowlist": [
-					"write"
-				],
 				"/etc/banip/banip.blocklist": [
+					"read",
 					"write"
 				],
 				"/etc/banip/banip.custom.feeds": [
 					"read",
 					"write"
+				],
+				"/var/run/banIP.search": [
+					"read",
+					"write"
+				],
+				"/var/run/banIP.report": [
+					"read",
+					"write"
 				]
-			},
-			"uci": [
-				"banip"
-			]
+			}
 		},
 		"read": {
 			"cgi-io": [
@@ -30,19 +39,10 @@
 				"/var/run/banip.lock": [
 					"read"
 				],
-				"/sbin/logread -e banIP-": [
-					"exec"
+				"/var/run/banip_runtime.json": [
+					"read"
 				],
-				"/usr/sbin/logread -e banIP-": [
-					"exec"
-				],
-				"/sbin/logread -e  banIP/": [
-					"exec"
-				],
-				"/usr/sbin/logread -e  banIP/": [
-					"exec"
-				],
-				"/usr/sbin/nft -tj list table inet banIP": [
+				"/usr/sbin/nft -tj list sets": [
 					"exec"
 				],
 				"/etc/init.d/banip stop": [
@@ -57,21 +57,24 @@
 				"/etc/init.d/banip report json": [
 					"exec"
 				],
-				"/etc/init.d/banip search [A-Za-z0-9:.]*": [
+				"/etc/init.d/banip report gen": [
 					"exec"
 				],
-				"/etc/init.d/banip survey [A-Za-z0-9]*": [
+				"/etc/init.d/banip search *": [
+					"exec"
+				],
+				"/etc/init.d/banip content *": [
 					"exec"
 				],
 				"/etc/init.d/banip status": [
-					"exec"
-				],
-				"/etc/init.d/banip lookup": [
 					"exec"
 				]
 			},
 			"uci": [
 				"banip"
+			],
+			"log": [
+				"read"
 			]
 		}
 	}

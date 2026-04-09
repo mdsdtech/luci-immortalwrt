@@ -3,19 +3,47 @@
 
 'use strict';
 
-import { stdin, access, dirname, basename, open, popen, glob, lsdir, readfile, readlink, error } from 'fs';
-import { connect } from 'ubus';
+import { stdin, access, dirname, basename, open, popen, glob, lsdir, readfile, readlink, realpath, error } from 'fs';
 import { cursor } from 'uci';
 
 import { init_list, init_index, init_enabled, init_action, conntrack_list, process_list } from 'luci.sys';
 import { revision, branch } from 'luci.version';
 import { statvfs, uname } from 'luci.core';
+import { connect } from 'ubus';
 
 import timezones from 'luci.zoneinfo';
 
 
 function shellquote(s) {
 	return `'${replace(s, "'", "'\\''")}'`;
+}
+
+function callPackageVersionCheck(pkg) {
+	let version = "";
+
+	if ( access('/bin/opkg') ) {
+		// <= v24.10
+		let fd = popen('opkg list-installed ' + shellquote(pkg) + ' 2>/dev/null');
+		if (fd) {
+			const re = regexp('^' + pkg + ' - (.+)$', 's');
+			const m = match(fd.read('all'), re);
+			version = m?.[1];
+
+			fd.close();
+		}
+	}
+	else if ( access('/usr/bin/apk') ) {
+		// > v24.10
+		let fd = popen('apk list -I ' + shellquote(pkg) + ' 2>/dev/null');
+		if (fd) {
+			const re = regexp('^' + pkg + '-(.+)$', 's');
+			const m = match(fd.read('all'), re);
+			version = m?.[1];
+
+			fd.close();
+		}
+	}
+	return version;
 }
 
 const methods = {
@@ -68,8 +96,9 @@ const methods = {
 		}
 	},
 
-	getLocaltime: {
+	getUnixtime: {
 		call: function(request) {
+			// time() ; Returns the current UNIX epoch.
 			return { result: time() };
 		}
 	},
@@ -204,7 +233,6 @@ const methods = {
 				fullcone:   access('/sys/module/xt_FULLCONENAT/refcnt') == true || access('/sys/module/nft_fullcone/refcnt') == true,
 				br2684ctl:  access('/usr/sbin/br2684ctl') == true,
 				swconfig:   access('/sbin/swconfig') == true,
-				odhcpd:     access('/usr/sbin/odhcpd') == true,
 				zram:       access('/sys/class/zram-control') == true,
 				sysntpd:    readlink('/usr/sbin/ntpd') != null,
 				ipv6:       access('/proc/net/ipv6_route') == true,
@@ -213,9 +241,27 @@ const methods = {
 				relayd:     access('/usr/sbin/relayd') == true,
 				apk:        access('/usr/bin/apk') == true,
 				wifi:       access('/sbin/wifi') == true,
+				ufpd:       access('/usr/sbin/ufpd') == true,
+				vrf:        access('/sys/module/vrf/refcnt') == true, // vrf.ko is loaded
+				netifd_vrf: false,
+				mptcp:      access('/proc/sys/net/mptcp/enabled'),
 			};
 
-			const wifi_features = [ 'eap', '11ac', '11ax', '11be', '11r', 'acs', 'sae', 'owe', 'suiteb192', 'wep', 'wps', 'ocv' ];
+			const wifi_features = [ 
+				'11ac',
+				'11ax',
+				'11be',
+				'11r',
+				'acs',
+				'eap',
+				'mesh',
+				'ocv',
+				'owe',
+				'sae',
+				'suiteb192',
+				'wep',
+				'wps',
+			];
 
 			if (access('/usr/sbin/hostapd')) {
 				result.hostapd = { cli: access('/usr/sbin/hostapd_cli') == true };
@@ -234,17 +280,39 @@ const methods = {
 			let fd = popen('dnsmasq --version 2>/dev/null');
 
 			if (fd) {
-				const m = match(fd.read('all'), /^Compile time options: (.+)$/s);
+				for (let line = fd.read('line'); length(line); line = fd.read('line')) {
+					const m = match(line, /^Compile time options: (.+)\n$/);
 
-				for (let opt in split(m?.[1], ' ')) {
-					let f = replace(opt, 'no-', '', 1);
+					for (let opt in split(m?.[1], ' ')) {
+						let f = replace(opt, 'no-', '', 1);
 
-					result.dnsmasq ??= {};
-					result.dnsmasq[lc(f)] = (f == opt);
+						result.dnsmasq ??= {};
+						result.dnsmasq[lc(f)] = (f == opt);
+					}
 				}
 
 				fd.close();
 			}
+
+			fd = popen('odhcpd -h 2>/dev/null');
+
+			if (fd) {
+				for (let line = fd.read('line'); length(line); line = fd.read('line')) {
+					result.odhcpd ??= {};
+
+					const m = match(line, /^Features: (.+)\n$/);
+
+					for (let opt in split(m?.[1], ' ')) {
+						let f = replace(opt, 'no-', '', 1);
+						result.odhcpd[lc(f)] = (f == opt);
+					}
+				}
+
+				fd.close();
+			}
+
+			// This check can be removed after v25 release
+			result.netifd_vrf = match(callPackageVersionCheck('netifd'), /^20[0-9][0-9]/s)?.[0] >= 2025;
 
 			fd = popen('ipset --help 2>/dev/null');
 
@@ -476,8 +544,8 @@ const methods = {
 
 				for (let line = fd.read('line'); length(line); line = fd.read('line')) {
 					const m = split(line, ' ');
-					const device = replace(m[0], /\\([0-9][0-9][0-9])/g, (m, n) => char(int(n, 8)));
-					const mount  = replace(m[1], /\\([0-9][0-9][0-9])/g, (m, n) => char(int(n, 8)));
+					const device = replace(m[0], /\\([0-9][0-9][0-9])/g, (m, n) => chr(int(n, 8)));
+					const mount  = replace(m[1], /\\([0-9][0-9][0-9])/g, (m, n) => chr(int(n, 8)));
 					const stat = statvfs(mount);
 
 					if (stat?.blocks > 0) {
@@ -499,6 +567,7 @@ const methods = {
 			}
 		}
 	},
+
 	getRealtimeStats: {
 		args: { mode: 'interface', device: 'eth0' },
 		call: function(request) {
@@ -585,6 +654,31 @@ const methods = {
 			}
 
 			return { result: ports };
+		}
+	},
+
+	getOdhcp6cStats: {
+		call: function() {
+			const ubus = connect();
+			const devs = ubus.call('network.device', 'status');
+
+			if (!devs)
+				return false;
+
+			const dev_stats = {};
+
+			for (let dev in devs) {
+				const m = ubus.call(`odhcp6c.${dev}`, 'get_statistics');
+
+				// not all interfaces are exposed unless odhcp6c runs on it
+				if (!m)
+					continue;
+
+				push(dev_stats, dev);
+				dev_stats[dev] = m;
+			}
+
+			return { result: dev_stats };
 		}
 	},
 

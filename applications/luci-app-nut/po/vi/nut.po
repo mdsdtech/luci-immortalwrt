@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-06-21 09:05+0000\n"
-"Last-Translator: Mashiro <michio.haiyaku@gmail.com>\n"
+"PO-Revision-Date: 2025-10-12 17:45+0000\n"
+"Last-Translator: Nguyễn Ngọc Hiền <superhien65@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnut/vi/>\n"
 "Language: vi\n"
@@ -10,11 +10,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:16
+#, fuzzy
 msgid "%s is mutually exclusive to other choices"
-msgstr ""
+msgstr "%s loại trừ lẫn nhau với các lựa chọn khác"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:244
 msgid "Additional Shutdown Time(s)"
@@ -159,6 +160,10 @@ msgstr "Cấp quyền truy cập UCI cho luci-app-nut"
 msgid "Host"
 msgstr "Host"
 
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
+msgid "Host Sync"
+msgstr ""
+
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:24
 msgid "Hostname or IP address"
 msgstr "Tên máy chủ hoặc địa chỉ IP"
@@ -167,10 +172,6 @@ msgstr "Tên máy chủ hoặc địa chỉ IP"
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:188
 msgid "Hostname or address of UPS"
 msgstr "Tên máy chủ hoặc địa chỉ của UPS"
-
-#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
-msgid "Hot Sync"
-msgstr "Đồng bộ nhanh"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:68
 msgid "IP Address"
@@ -508,6 +509,15 @@ msgstr "Giao tiếp đồng bộ"
 msgid "The name of this section will be used as UPS name elsewhere"
 msgstr "Tên phần này sẽ được sử dụng làm tên UPS ở nơi khác"
 
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:157
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:193
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:196
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:247
+msgid ""
+"This is passed through to the driver, so make sure your driver supports this "
+"option"
+msgstr ""
+
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:125
 msgid "Time in seconds between driver start retry attempts."
 msgstr ""
@@ -601,5 +611,5 @@ msgstr ""
 msgid "upsmon drops privileges to this user"
 msgstr "upsmon từ bỏ đặc quyền của người dùng này"
 
-#~ msgid "NUT CGI Access"
-#~ msgstr "Truy cập NUT CGI"
+#~ msgid "Hot Sync"
+#~ msgstr "Đồng bộ nhanh"

@@ -1,12 +1,16 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-15 20:45+0000\n"
+"Last-Translator: Random Github User <shahariarrabby1@gmail.com>\n"
+"Language-Team: Bengali (Bangladesh) <https://hosted.weblate.org/projects/"
+"openwrt/luciapplicationsopenwisp/bn_BD/>\n"
 "Language: bn_BD\n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:17
 msgid "Advanced Settings"
@@ -27,9 +31,7 @@ msgstr ""
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:12
 msgid ""
 "Configure, start and stop the OpenWISP agent on this device. Read more about "
-"configuration values: <a target='_blank' rel='noopener noreferrer' "
-"href='https://github.com/openwisp/openwisp-config'>https://github.com/"
-"openwisp/openwisp-config</a>"
+"configuration values: %s."
 msgstr ""
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:87
@@ -46,7 +48,7 @@ msgstr ""
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:27
 msgid "Enable"
-msgstr ""
+msgstr "সক্রিয় করুন"
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:28
 msgid "Enable or disable the OpenWISP service."
@@ -161,8 +163,7 @@ msgid "The Key of this device in the OpenWISP server."
 msgstr ""
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:33
-msgid ""
-"The URL to the OpenWISP server. Example: https://openwisp2.mynetwork.com"
+msgid "The URL to the OpenWISP server. Example: %s"
 msgstr ""
 
 #: applications/luci-app-openwisp/htdocs/luci-static/resources/view/openwisp.js:20

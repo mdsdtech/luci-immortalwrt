@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-26 03:26+0000\n"
+"PO-Revision-Date: 2025-07-24 15:20+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssqm/ta/>\n"
@@ -8,25 +8,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:133
 msgid "Advanced Configuration"
 msgstr "மேம்பட்ட உள்ளமைவு"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:199
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
 msgid "Advanced Linklayer Options"
 msgstr "மேம்பட்ட லிங்க்லேயர் விருப்பங்கள்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:183
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
 msgid ""
 "Advanced option string to pass to the egress queueing disciplines; no error "
 "checking, use very carefully."
 msgstr ""
-"முன்னேற்றப் பணி சரம் முன்னேற்ற வரிசைப்படுத்தும் துறைகளுக்கு அனுப்ப; பிழை சரிபார்ப்பு இல்லை"
-", மிகவும் கவனமாக பயன்படுத்தவும்."
+"முன்னேற்றப் பணி சரம் முன்னேற்ற வரிசைப்படுத்தும் துறைகளுக்கு அனுப்ப; பிழை சரிபார்ப்பு "
+"இல்லை, மிகவும் கவனமாக பயன்படுத்தவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:184
 msgid ""
 "Advanced option string to pass to the ingress queueing disciplines; no error "
 "checking, use very carefully."
@@ -34,7 +34,7 @@ msgstr ""
 "மேம்பட்ட விருப்ப சரம் நுழைவு வரிசை பிரிவுகளுக்கு அனுப்ப; பிழை சரிபார்ப்பு இல்லை, "
 "மிகவும் கவனமாக பயன்படுத்தவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:199
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
 msgid ""
 "Advanced options will only be used as long as this box is checked (only "
 "needed if MTU > 1500)."
@@ -44,8 +44,7 @@ msgstr ""
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:133
 msgid "Advanced options will only be used as long as this box is checked."
-msgstr ""
-"இந்த பெட்டி சரிபார்க்கப்படும் வரை மட்டுமே மேம்பட்ட விருப்பங்கள் பயன்படுத்தப்படும்."
+msgstr "இந்த பெட்டி சரிபார்க்கப்படும் வரை மட்டுமே மேம்பட்ட விருப்பங்கள் பயன்படுத்தப்படும்."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:72
 msgid "Basic Settings"
@@ -59,14 +58,13 @@ msgstr ""
 "இந்த SQM உதாரணத்திற்கு பதிவு கோப்பை உருவாக்கவும்/run/sqm/$ {Interface_name}. "
 "LeisureStart|stop] sqm.log."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:160
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
 msgid "Dangerous Configuration"
 msgstr "ஆபத்தான உள்ளமைவு"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:160
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
 msgid "Dangerous options will only be used as long as this box is checked."
-msgstr ""
-"இந்த பெட்டி சரிபார்க்கப்படும் வரை மட்டுமே ஆபத்தான விருப்பங்கள் பயன்படுத்தப்படும்."
+msgstr "இந்த பெட்டி சரிபார்க்கப்படும் வரை மட்டுமே ஆபத்தான விருப்பங்கள் பயன்படுத்தப்படும்."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:92
 msgid "Download speed (ingress)"
@@ -78,11 +76,11 @@ msgid ""
 "selectively"
 msgstr "பதிவிறக்க விரைவு (kbit/s) (ingress) 0 ஆக அமைக்கவும்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:154
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:158
 msgid "ECN (egress)"
 msgstr "ஈ.சி.என் (முன்னேற்றம்)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:148
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:152
 msgid "ECN (ingress)"
 msgstr "ஈ.சி.என் (நுழைவு)"
 
@@ -94,44 +92,53 @@ msgstr "SQM ஐ இயக்கவும்"
 msgid "Enable debug logging"
 msgstr "பிழைத்திருத்த பதிவை இயக்கவும்"
 
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+msgid "Enable multi-queue config"
+msgstr ""
+
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+msgid ""
+"Enable multi-queue qdisc on supported hardware. If .qos script does not "
+"support mq this option is ignored."
+msgstr ""
+
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:78
 msgid "Enable this SQM instance."
 msgstr "இந்த SQM உதாரணத்தை இயக்கவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:148
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:152
 msgid "Explicit congestion notification (ECN) status on inbound packets"
 msgstr "உள்வரும் பாக்கெட்டுகளில் வெளிப்படையான நெரிசல் அறிவிப்பு (ஈ.சி.என்) நிலை"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:154
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:158
 msgid "Explicit congestion notification (ECN) status on outbound packets"
-msgstr ""
-"வெளிச்செல்லும் பாக்கெட்டுகளில் வெளிப்படையான நெரிசல் அறிவிப்பு (ஈ.சி.என்) நிலை"
+msgstr "வெளிச்செல்லும் பாக்கெட்டுகளில் வெளிப்படையான நெரிசல் அறிவிப்பு (ஈ.சி.என்) நிலை"
 
 #: applications/luci-app-sqm/root/usr/share/rpcd/acl.d/luci-app-sqm.json:3
 msgid "Grant UCI access for luci-app-sqm"
 msgstr "லூசி-ஆப்-சதுரத்திற்கு யுசிஐ அணுகல் வழங்கவும்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
 msgid "Hard limit on egress queues; leave empty for default."
 msgstr "முன்னேற்ற வரிசைகளில் கடினமான வரம்பு; இயல்புநிலைக்கு காலியாக விடவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
 msgid "Hard limit on ingress queues; leave empty for default."
 msgstr "நுழைவு வரிசைகளில் கடினமான வரம்பு; இயல்புநிலைக்கு காலியாக விடவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
 msgid "Hard queue limit (egress)"
 msgstr "கடின வரிசை வரம்பு (முன்னேற்றம்)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
 msgid "Hard queue limit (ingress)"
 msgstr "கடின வரிசை வரம்பு (நுழைவு)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:142
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:146
 msgid "Ignore DSCP (ingress)"
 msgstr "டி.எச்.சி.பி (நுழைவு) புறக்கணிக்கவும்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:142
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:146
 msgid "Ignore DSCP markings on inbound packets"
 msgstr "உள்வரும் பாக்கெட்டுகளில் டி.எச்.சி.பி அடையாளங்களை புறக்கணிக்கவும்"
 
@@ -139,15 +146,15 @@ msgstr "உள்வரும் பாக்கெட்டுகளில் �
 msgid "Interface name"
 msgstr "இடைமுக பெயர்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
 msgid "Latency target (egress)"
 msgstr "தாமத இலக்கு (முன்னேற்றம்)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
 msgid "Latency target (ingress)"
 msgstr "தாமத இலக்கு (நுழைவு)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
 msgid ""
 "Latency target for egress, e.g. 5ms [units: s, ms, or us]; leave empty for "
 "automatic selection, put in the word default for the qdisc's default."
@@ -156,7 +163,7 @@ msgstr ""
 "தானியங்கி தேர்வுக்கு காலியாக விடவும், QDISC இன் இயல்புநிலைக்கு இயல்புநிலை என்ற "
 "வார்த்தையில் வைக்கவும்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
 msgid ""
 "Latency target for ingress, e.g 5ms [units: s, ms, or us]; leave empty for "
 "automatic selection, put in the word default for the qdisc's default."
@@ -169,11 +176,11 @@ msgstr ""
 msgid "Link Layer Adaptation"
 msgstr "இணைப்பு அடுக்கு தழுவல்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:191
 msgid "Link layer"
 msgstr "இணைப்பு அடுக்கு"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:218
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:222
 msgid "Linklayer adaptation mechanism"
 msgstr "லிங்க்லேயர் தழுவல் வழிமுறை"
 
@@ -189,7 +196,7 @@ msgstr ""
 msgid "Log verbosity"
 msgstr "பதிவு சொற்களஞ்சியம்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:207
 msgid ""
 "Maximal Size for size and rate calculations, tcMTU (byte); needs to be >= "
 "interface MTU + overhead"
@@ -197,21 +204,21 @@ msgstr ""
 "அளவு மற்றும் வீத கணக்கீட்டிற்கான அதிகபட்ச அளவு, MTU (BYTE); இருக்க வேண்டும்> = இடைமுகம் "
 "MTU + மேல்நிலை"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:207
 msgid "Maximum packet size"
 msgstr "அதிகபட்ச பாக்கெட் அளவு"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:213
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:217
 msgid ""
 "Minimal packet size, MPU (byte); needs to be > 0 for ethernet size tables"
 msgstr ""
 "குறைந்தபட்ச பாக்கெட் அளவு, MPU (பைட்); ஈத்தர்நெட் அளவு அட்டவணைகளுக்கு> 0 இருக்க வேண்டும்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:213
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:217
 msgid "Minimum packet size"
 msgstr "குறைந்தபட்ச பாக்கெட் அளவு"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:208
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:212
 msgid ""
 "Number of entries in size/rate tables, TSIZE; for ATM choose TSIZE = (tcMTU "
 "+ 1) / 16"
@@ -219,15 +226,15 @@ msgstr ""
 "அளவு/வீத அட்டவணை, அளவு உள்ளீடுகளின் எண்ணிக்கை; ஏடிஎம் அளவு = (MTU + 1) / 16 ஐத் "
 "தேர்வுசெய்க"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:193
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:197
 msgid "Per Packet Overhead (bytes)"
 msgstr "ஒரு பாக்கெட் மேல்நிலைக்கு (பைட்டுகள்)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:183
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
 msgid "Qdisc options (egress)"
 msgstr "QDISC விருப்பங்கள் (முன்னேற்றம்)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:184
 msgid "Qdisc options (ingress)"
 msgstr "QDISC விருப்பங்கள் (நுழைவு)"
 
@@ -247,23 +254,23 @@ msgstr "வரிசை ஒழுக்கம்"
 msgid "Queues"
 msgstr "வால்கள்"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:208
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:212
 msgid "Rate table size"
 msgstr "வீத அட்டவணை அளவு"
 
 #: applications/luci-app-sqm/root/usr/share/luci/menu.d/luci-app-sqm.json:3
 msgid "SQM QoS"
-msgstr "SQM QoS"
+msgstr "சதுர மீட்டர் சேவையின் தரம்"
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:64
 msgid "Smart Queue Management"
 msgstr "அறிவுள்ள வரிசை மேலாண்மை"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:140
 msgid "Squash DSCP (ingress)"
 msgstr "ச்குவாச் டி.எச்.சி.பி (நுழைவு)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:140
 msgid "Squash DSCP markings on inbound packets"
 msgstr "உள்வரும் பாக்கெட்டுகளில் ச்குவாச் டி.எச்.சி.பி அடையாளங்கள்"
 
@@ -299,11 +306,11 @@ msgstr ""
 msgid "Verbosity of SQM's output into the system log."
 msgstr "கணினி பதிவில் SQM இன் வெளியீட்டின் சொற்களஞ்சியம்."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:191
 msgid "Which link layer technology to account for"
 msgstr "எந்த இணைப்பு அடுக்கு தொழில்நுட்பத்தை கணக்கிட"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:218
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:222
 msgid "Which linklayer adaptation mechanism to use; for testing only"
 msgstr "பயன்படுத்த எந்த இணைப்பு லேயர் தழுவல் வழிமுறை; சோதனைக்கு மட்டுமே"
 
@@ -313,14 +320,14 @@ msgid ""
 "traffic shaping, better mixing (Fair Queueing), active queue length "
 "management (AQM) and prioritisation on one network interface."
 msgstr ""
-"<ABBR தலைப்பு = \"அறிவுள்ள க்யூ மேனேச்மென்ட்\"> SQM </abbr> உடன் போக்குவரத்து "
+"<abbr title=\"Smart Queue Management\">சேவையின் தரம் </abbr> உடன் போக்குவரத்து "
 "வடிவமைத்தல், சிறந்த கலவை (நியாயமான வரிசை), செயலில் வரிசை நீள மேலாண்மை (AQM) மற்றும் "
 "ஒரு பிணைய இடைமுகத்தில் முன்னுரிமை அளிக்கலாம்."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:107
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:149
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:155
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:188
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:219
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:153
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:159
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:192
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:223
 msgid "default"
 msgstr "இயல்புநிலை"

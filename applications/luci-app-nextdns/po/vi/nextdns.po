@@ -27,12 +27,8 @@ msgid "Expose LAN clients information in NextDNS analytics."
 msgstr "Hiển thị thông tin thiết bị nội bộ trong phân tích NextDNS."
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:12
-msgid ""
-"For further information, go to <a href=\"https://nextdns.io\" "
-"target=\"_blank\">nextdns.io</a>."
+msgid "For further information, go to %s."
 msgstr ""
-"Để biết thêm thông tin, hãy truy cập <a href=\"https://nextdns.io\" "
-"target=\"_blank\"> NextDNS.io </a>."
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:15
 msgid "General"
@@ -67,6 +63,10 @@ msgstr "NextDNS"
 msgid "NextDNS Configuration."
 msgstr "Cấu hình NextDNS."
 
+#: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/logread.js:4
+msgid "NextDNS Log"
+msgstr ""
+
 #: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:15
 msgid "Overview"
 msgstr "Tổng quan"
@@ -79,13 +79,9 @@ msgstr "Báo cáo thông tin máy khách"
 msgid "The ID of your NextDNS configuration."
 msgstr "ID cho cấu hình NextDNS của bạn."
 
-#~ msgid "Configuration"
-#~ msgstr "Cấu hình"
-
-#~ msgid "No nextdns related logs yet!"
-#~ msgstr "Chưa có nhật ký nào liên quan đến nextdns!"
-
-#~ msgid "The syslog output, pre-filtered for nextdns related messages only."
+#~ msgid ""
+#~ "For further information, go to <a href=\"https://nextdns.io\" "
+#~ "target=\"_blank\">nextdns.io</a>."
 #~ msgstr ""
-#~ "Đầu ra nhật ký hệ thống, chỉ được lọc trước cho các thông báo liên quan "
-#~ "đến nextdns."
+#~ "Để biết thêm thông tin, hãy truy cập <a href=\"https://nextdns.io\" "
+#~ "target=\"_blank\"> NextDNS.io </a>."

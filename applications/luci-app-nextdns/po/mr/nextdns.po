@@ -27,12 +27,8 @@ msgid "Expose LAN clients information in NextDNS analytics."
 msgstr "नेक्स्ट डीएनएस अनॅलिटीक्स मध्ये क्लायंट ची माहिती उघड करा."
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:12
-msgid ""
-"For further information, go to <a href=\"https://nextdns.io\" "
-"target=\"_blank\">nextdns.io</a>."
+msgid "For further information, go to %s."
 msgstr ""
-"अधिक माहितीसाठी <a href=\"https://nextdns.io\" target=\"_blank\">nextdns.io</"
-"a>वर जा."
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:15
 msgid "General"
@@ -67,6 +63,10 @@ msgstr "नेक्स्ट डीएनएस"
 msgid "NextDNS Configuration."
 msgstr "नेक्स्टडीएनएस कॉन्फिगरेशन."
 
+#: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/logread.js:4
+msgid "NextDNS Log"
+msgstr ""
+
 #: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:15
 msgid "Overview"
 msgstr "आढावा"
@@ -79,26 +79,9 @@ msgstr "ग्राहकांची माहिती नोंदवा"
 msgid "The ID of your NextDNS configuration."
 msgstr "आपल्या नेक्स्ट डीएनएस कॉन्फिगरेशनचा आयडी."
 
-#~ msgid "Configuration"
-#~ msgstr "कॉन्फिगरेशन"
-
-#~ msgid "No nextdns related logs yet!"
-#~ msgstr "अद्याप नेक्स्ट डीएनएस संबंधित लॉग नाहीत!"
-
-#~ msgid "The syslog output, pre-filtered for nextdns related messages only."
-#~ msgstr "सिस्लॉग आउटपुट, केवळ नेक्स्ट डीएनएस संबंधित संदेशांसाठी पूर्व-फिल्टर केलेले."
-
 #~ msgid ""
-#~ "Available locations are: Switzerland, Iceland, Finland, Panama and Hong "
-#~ "Kong."
-#~ msgstr "उपलब्ध स्थाने अशी आहेतः स्वित्झर्लंड, आइसलँड, फिनलँड, पनामा आणि हाँगकाँग."
-
-#~ msgid "Hardened Privacy"
-#~ msgstr "कठोर गोपनीयता"
-
-#~ msgid ""
-#~ "When enabled, use DNS servers located in jurisdictions with strong "
-#~ "privacy laws."
+#~ "For further information, go to <a href=\"https://nextdns.io\" "
+#~ "target=\"_blank\">nextdns.io</a>."
 #~ msgstr ""
-#~ "सक्षम केलेले असताना, मजबूत गोपनीयता कायद्यांसह कार्यक्षेत्रात असलेले डीएनएस सर्व्हर "
-#~ "वापरा."
+#~ "अधिक माहितीसाठी <a href=\"https://nextdns.io\" "
+#~ "target=\"_blank\">nextdns.io</a>वर जा."

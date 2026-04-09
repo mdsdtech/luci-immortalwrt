@@ -1,20 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-02-21 18:02+0000\n"
-"Last-Translator: try496 <pinghejk@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"openwrt/luciapplicationseoip/zh_Hans/>\n"
+"PO-Revision-Date: 2026-02-22 16:17+0000\n"
+"Last-Translator: MkQtS <MkQtS@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
+"projects/openwrt/luciapplicationseoip/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:38
 msgid "Destination"
-msgstr "目标地址"
+msgstr "目标"
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:38
 msgid "Destination IP address for connection EoIP."
@@ -44,8 +44,9 @@ msgstr "授予 luci-app-eoip 的 UCI 访问权限"
 msgid ""
 "Here you can configure EoIP tunnel. At current moment it is easiest way to "
 "create stateless tunnel with Mikrotik."
-msgstr "在这里，您可以配置 EoIP 隧道。目前，这是使用 Mikrotik "
-"创建无状态隧道的最简单方式。"
+msgstr ""
+"在这里，您可以配置 EoIP 隧道。目前，这是使用 Mikrotik 创建无状态隧道的最简单"
+"方式。"
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:33
 msgid "ID tunnel"
@@ -60,7 +61,8 @@ msgid ""
 "If you use dynamic option, take attention that there is no authorization, "
 "and it is not secure. It is not good idea to use this feature with public ip "
 "or insecure(not completely under your control, each host) network."
-msgstr "如果您使用动态选项，请注意，这将没有授权，并且不安全。使用此功能时，不建议使"
+msgstr ""
+"如果您使用动态选项，请注意，这将没有授权，并且不安全。使用此功能时，不建议使"
 "用公共IP地址或不安全的（不完全受你控制，每个主机）网络。"
 
 #: applications/luci-app-eoip/htdocs/luci-static/resources/view/eoip/eoip.js:33

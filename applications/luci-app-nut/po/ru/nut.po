@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-16 19:05+0000\n"
-"Last-Translator: Lorekin <lorekine@outlook.com>\n"
+"PO-Revision-Date: 2026-02-15 08:21+0000\n"
+"Last-Translator: SnIPeRSnIPeR <snipersniper@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnut/ru/>\n"
 "Language: ru\n"
@@ -11,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:16
 msgid "%s is mutually exclusive to other choices"
@@ -27,7 +28,7 @@ msgstr "Адреса для прослушивания"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:49
 msgid "Allowed actions"
-msgstr "Разрешенные действия"
+msgstr "Разрешённые действия"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:21
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:156
@@ -161,7 +162,11 @@ msgstr "Предоставить UCI доступ для luci-app-nut"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:17
 msgid "Host"
-msgstr "Устройство"
+msgstr "Хост"
+
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
+msgid "Host Sync"
+msgstr "Синхронизация хоста"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:24
 msgid "Hostname or IP address"
@@ -171,10 +176,6 @@ msgstr "Имя хоста или IP адрес"
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:188
 msgid "Hostname or address of UPS"
 msgstr "Имя или адрес хоста UPS"
-
-#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
-msgid "Hot Sync"
-msgstr "Быстрая синхронизация"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:68
 msgid "IP Address"
@@ -378,7 +379,7 @@ msgstr "Пароль"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:142
 msgid "Path containing ca certificates to match against host certificate"
-msgstr "Путь, содержащий сертификаты CA для сопоставления с сертификатом хоста"
+msgstr "Путь, содержащий CA-сертификаты для сопоставления с сертификатом хоста"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:112
 msgid "Path to drivers (instead of default)"
@@ -435,7 +436,7 @@ msgstr "Сообщение о замене батареи"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:146
 msgid "Require SSL and make sure server CN matches hostname"
-msgstr "Требуйте SSL и убедитесь, что CN сервера соответствует имени хоста"
+msgstr "Требовать SSL и проверять соответствие CN-сервера имени хоста"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:125
 msgid "Retry Delay"
@@ -513,6 +514,17 @@ msgid "The name of this section will be used as UPS name elsewhere"
 msgstr ""
 "Название этого раздела будет использоваться в качестве названия ИБП в других "
 "местах"
+
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:157
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:193
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:196
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:247
+msgid ""
+"This is passed through to the driver, so make sure your driver supports this "
+"option"
+msgstr ""
+"Параметр передаётся драйверу напрямую. Убедитесь, что ваш драйвер "
+"поддерживает эту опцию"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:125
 msgid "Time in seconds between driver start retry attempts."
@@ -605,7 +617,7 @@ msgstr "установить драйверы"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:44
 msgid "upsmon drops privileges to this user"
-msgstr "upsmon передает привилегии этому пользователю"
+msgstr "upsmon передаёт привилегии этому пользователю"
 
-#~ msgid "NUT CGI Access"
-#~ msgstr "NUT CGI доступ"
+#~ msgid "Hot Sync"
+#~ msgstr "Быстрая синхронизация"

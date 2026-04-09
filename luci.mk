@@ -32,6 +32,7 @@ LUCI_LANG.fa=Farsi (Persian)
 LUCI_LANG.fi=Suomi (Finnish)
 LUCI_LANG.fil=Filipino (Philippinic)
 LUCI_LANG.fr=Français (French)
+LUCI_LANG.ga=Gaeilge (Irish)
 LUCI_LANG.he=עִבְרִית (Hebrew)
 LUCI_LANG.hi=हिंदी (Hindi)
 LUCI_LANG.hu=Magyar (Hungarian)
@@ -50,12 +51,13 @@ LUCI_LANG.ro=Română (Romanian)
 LUCI_LANG.ru=Русский (Russian)
 LUCI_LANG.sk=Slovenčina (Slovak)
 LUCI_LANG.sv=Svenska (Swedish)
+LUCI_LANG.ta=Tamil (Tamil)
 LUCI_LANG.tr=Türkçe (Turkish)
 LUCI_LANG.uk=Українська (Ukrainian)
 LUCI_LANG.vi=Tiếng Việt (Vietnamese)
 LUCI_LANG.yua=Yucateco (Yucatec Maya)
-LUCI_LANG.zh_Hans=简体中文 (Chinese Simplified)
-LUCI_LANG.zh_Hant=繁體中文 (Chinese Traditional)
+LUCI_LANG.zh_Hans=简体中文 (Simplified Chinese)
+LUCI_LANG.zh_Hant=正體中文 (Traditional Chinese)
 #LUCI_LANG_END
 
 # Submenu titles
@@ -63,8 +65,9 @@ LUCI_MENU.col=1. Collections
 LUCI_MENU.mod=2. Modules
 LUCI_MENU.app=3. Applications
 LUCI_MENU.theme=4. Themes
-LUCI_MENU.proto=5. Protocols
-LUCI_MENU.lib=6. Libraries
+LUCI_MENU.plugin=5. Plugins
+LUCI_MENU.proto=6. Protocols
+LUCI_MENU.lib=7. Libraries
 
 # Language aliases
 LUCI_LC_ALIAS.bn_BD=bn
@@ -160,6 +163,7 @@ endif
   $(if $(LUCI_EXTRA_DEPENDS),EXTRA_DEPENDS:=$(LUCI_EXTRA_DEPENDS))
   $(if $(LUCI_PKGARCH),PKGARCH:=$(LUCI_PKGARCH))
   $(if $(PKG_PROVIDES),PROVIDES:=$(PKG_PROVIDES))
+  $(if $(LUCI_DEFAULT),DEFAULT:=$(LUCI_DEFAULT))
   URL:=$(LUCI_URL)
   MAINTAINER:=$(LUCI_MAINTAINER)
 endef
@@ -231,7 +235,7 @@ define Package/$(PKG_NAME)/postinst
 [ -n "$${IPKG_INSTROOT}" ] || { \
 	rm -f /tmp/luci-indexcache.*
 	rm -rf /tmp/luci-modulecache/
-	killall -HUP rpcd 2>/dev/null
+	/etc/init.d/rpcd reload 2>/dev/null
 	exit 0
 }
 endef
@@ -303,7 +307,7 @@ ifeq ($(PKG_NAME),luci-base)
 
    config LUCI_CSSTIDY
 	bool "Minify CSS files"
-	default n
+	default y
 
    menu "Translations"$(foreach lang,$(LUCI_LANGUAGES),$(if $(LUCI_LANG.$(lang)),
 

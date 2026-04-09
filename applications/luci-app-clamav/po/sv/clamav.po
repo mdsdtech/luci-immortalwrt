@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-15 13:01+0000\n"
+"PO-Revision-Date: 2026-01-07 14:02+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsclamav/sv/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav.js:248
 msgid "150M"
@@ -64,7 +64,7 @@ msgstr "Grundläggande"
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:64
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:72
 msgid "Blackhole"
-msgstr ""
+msgstr "Svart hål"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav.js:195
 msgid "Block encrypted archives"
@@ -75,6 +75,10 @@ msgstr "Blockera krypterade arkiv"
 #: applications/luci-app-clamav/root/usr/share/luci/menu.d/luci-app-clamav.json:15
 msgid "ClamAV"
 msgstr "ClamAV"
+
+#: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-log.js:4
+msgid "ClamAV Log"
+msgstr ""
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:15
 #: applications/luci-app-clamav/root/usr/share/luci/menu.d/luci-app-clamav.json:24
@@ -194,7 +198,7 @@ msgstr "Freshclam"
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:152
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:158
 msgid "Full"
-msgstr ""
+msgstr "Fullständig"
 
 #: applications/luci-app-clamav/root/usr/share/rpcd/acl.d/luci-app-clamav.json:3
 msgid "Grant UCI access for luci-app-clamav"
@@ -216,7 +220,7 @@ msgstr "Logga ytterligare information om infektionen"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:155
 msgid "Log clean"
-msgstr ""
+msgstr "Logg-rensning"
 
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:149
 msgid "Log infections"
@@ -504,24 +508,3 @@ msgstr ""
 #: applications/luci-app-clamav/htdocs/luci-static/resources/view/clamav/clamav-milter.js:202
 msgid "clamd socket"
 msgstr ""
-
-#~ msgid "10"
-#~ msgstr "10"
-
-#~ msgid "1024"
-#~ msgstr "1024"
-
-#~ msgid "15"
-#~ msgstr "15"
-
-#~ msgid "20"
-#~ msgstr "20"
-
-#~ msgid "2048"
-#~ msgstr "2048"
-
-#~ msgid "600"
-#~ msgstr "600"
-
-#~ msgid "Max size of log file"
-#~ msgstr "Högsta storlek av loggfilen"

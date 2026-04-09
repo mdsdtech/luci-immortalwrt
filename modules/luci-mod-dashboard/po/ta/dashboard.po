@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-26 13:56+0000\n"
+"PO-Revision-Date: 2025-06-15 15:48+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openwrt/"
 "lucimodulesluci-mod-dashboard/ta/>\n"
@@ -8,30 +8,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:160
 msgid "Active"
 msgstr "செயலில்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:317
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:350
 msgid "Architecture"
 msgstr "கட்டிடக்கலை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:181
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:178
 msgid "BSSID"
-msgstr "பி.எச்.ஐ.டி."
+msgstr "பி.எச்.ஐ.டி"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:175
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:172
 msgid "Bitrate"
 msgstr "பிட்ரேட்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:169
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:166
 msgid "Channel"
 msgstr "வாய்க்கால்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:186
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:226
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:217
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:257
 msgid "Connected"
 msgstr "இணைக்கப்பட்டுள்ளது"
 
@@ -39,11 +39,11 @@ msgstr "இணைக்கப்பட்டுள்ளது"
 msgid "DHCP Devices"
 msgstr "DHCP சாதனங்கள்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:216
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:247
 msgid "DNSv4"
 msgstr "Dnsv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:262
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:293
 msgid "DNSv6"
 msgstr "Dnsv6"
 
@@ -51,43 +51,35 @@ msgstr "Dnsv6"
 msgid "Dashboard"
 msgstr "முகப்புப்பெட்டி"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:134
-msgid "Devices"
-msgstr "சாதனங்கள்"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:193
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:190
 msgid "Devices Connected"
 msgstr "இணைக்கப்பட்ட சாதனங்கள்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Down."
 msgstr "கீழே."
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:129
-msgid "Download"
-msgstr "பதிவிறக்கம்"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:187
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:184
 msgid "Encryption"
 msgstr "குறியாக்கம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:322
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:355
 msgid "Firmware Version"
 msgstr "ஃபார்ம்வேர் பதிப்பு"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:171
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:168
 msgid "GHz"
 msgstr "Ghz"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:210
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:241
 msgid "GatewayV4"
 msgstr "கேட்வேவ் 4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:256
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:287
 msgid "GatewayV6"
 msgstr "கேட்வேவ் 6"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:25
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:26
 msgid "Grant access to DHCP status display"
 msgstr "DHCP நிலை காட்சிக்கு அணுகலை வழங்கவும்"
 
@@ -99,113 +91,109 @@ msgstr "முதன்மையான நிலை காட்சிக்க�
 msgid "Grant access to the system route status"
 msgstr "கணினி பாதை நிலைக்கு அணுகலை வழங்கவும்"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:34
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:35
 msgid "Grant access to wireless status display"
 msgstr "வயர்லெச் நிலை காட்சிக்கு அணுகலை வழங்கவும்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:30
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:225
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:39
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:81
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:222
 msgid "Hostname"
 msgstr "புரவலன்பெயர்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:31
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:40
 msgid "IP Address"
 msgstr "ஐபி முகவரி"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:204
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:114
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:235
 msgid "IPv4"
 msgstr "Iprsh"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:183
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:214
 msgid "IPv4 Internet"
 msgstr "ஐ.பி.ஆர்.டி இணையம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:250
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:281
 msgid "IPv6"
 msgstr "Ipvsh"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:223
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:254
 msgid "IPv6 Internet"
 msgstr "IPVSH இணையம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:244
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:275
 msgid "IPv6 prefix"
 msgstr "IPv6 முன்னொட்டு"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:69
 msgid "Internet"
 msgstr "இணையம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:307
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:340
 msgid "Kernel Version"
 msgstr "கர்னல் பதிப்பு"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:302
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:335
 msgid "Local Time"
 msgstr "உள்ளக நேரம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:32
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:41
 msgid "MAC"
 msgstr "மேக்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:119
-msgid "Mac"
-msgstr "மேக்"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:177
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:174
 msgid "Mbit/s"
-msgstr "Mbit/s"
+msgstr "மெஇருமம்/நொ"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:312
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:345
 msgid "Model"
 msgstr "மாதிரியுரு"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:162
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:169
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:193
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:200
 msgid "Not connected"
 msgstr "இணைக்கப்படவில்லை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:198
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:238
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:229
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:269
 msgid "Protocol"
 msgstr "நெறிமுறை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:157
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:231
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:82
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:154
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:228
 msgid "SSID"
 msgstr "Ssid"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:85
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
 msgid "Signal Strength"
 msgstr "சிக்னல் வலிமை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:237
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:234
 msgid "Strength"
 msgstr "வலிமை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:69
 msgid "System"
 msgstr "மண்டலம்"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:247
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:80
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:128
+msgid "Total"
+msgstr ""
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:244
 msgid "Transferred"
 msgstr "மாற்றப்பட்டது"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Up."
 msgstr "மேலே."
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:124
-msgid "Upload"
-msgstr "பதிவேற்றும்"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:192
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:232
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:297
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:223
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:263
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:330
 msgid "Uptime"
 msgstr "நேரம்"
 
@@ -213,12 +201,24 @@ msgstr "நேரம்"
 msgid "Wireless"
 msgstr "கம்பியில்லா"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:102
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:62
 msgid "no"
 msgstr "இல்லை"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:102
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:62
 msgid "yes"
 msgstr "ஆம்"
+
+#~ msgid "Devices"
+#~ msgstr "சாதனங்கள்"
+
+#~ msgid "Download"
+#~ msgstr "பதிவிறக்கம்"
+
+#~ msgid "Mac"
+#~ msgstr "மேக்"
+
+#~ msgid "Upload"
+#~ msgstr "பதிவேற்றும்"

@@ -35,7 +35,8 @@
 	font-size: 100%;
 	background: none;
 	outline: none;
-	-webkit-appearance: none;
+	-webkit-appearance: none; /* nonstandard, should remove in future */
+	appearance: none;
 }
 
 html {
@@ -107,20 +108,22 @@ abbr[title], acronym[title] {
 	color: var(--main-bright-color);
 	display: inline-block;
 	font-size: .85em;
-	line-height: 1.5em;
-	padding: 0 .5em;
 	margin: .125em;
-	border-radius: 1em;
 	cursor: pointer;
 	white-space: nowrap;
+	/* Match rounded indicators to same style as "hide" and "show" buttons for design consistency (site wide) */
+	line-height: 1.8em;
+	border-radius: .5rem;
+	padding: 0 .7em;
 }
 
 #indicators > [data-style="inactive"] {
 	background: var(--main-bright-color);
 	color: var(--secondary-bright-color);
 	border: 2px solid var(--secondary-bright-color);
-	line-height: calc(1.5em - 4px);
-	padding: 0 calc(.5em - 2px);
+	/* Update existing calculations with same new adjustments as above */
+	line-height: calc(1.8em - 4px);
+	padding:0 calc(.7em - 2px);
 }
 
 #menubar h2,
@@ -155,8 +158,8 @@ abbr[title], acronym[title] {
 }
 
 #mainmenu {
-	flex: 1 1 100px;
-	max-width: 250px;
+/*	flex: 1 1 100px;*/
+	max-width: max-content;
 	background: var(--main-dark-color);
 	color: var(--main-bright-color);
 	padding: 1em;
@@ -277,6 +280,7 @@ body.modal-overlay-active #modal_overlay {
 .modal .button-row {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .modal .button-row > :not(:last-child) {
@@ -298,16 +302,12 @@ table {
 	border-collapse: collapse;
 }
 
-tr.cbi-section-table-titles[data-title]::before {
+tr.cbi-section-table-titles {
 	font-weight: bold;
-	border-top: none;
 }
 
 tr[data-title]::before {
-	content: attr(data-title);
-	display: table-cell;
-	border-top: 1px solid var(--main-dark-color);
-	padding: .5em;
+	content: none;
 }
 
 th {
@@ -551,7 +551,9 @@ tr.placeholder > td {
 	vertical-align: middle !important;
 }
 
-.nowrap {
+.nowrap:not(span) {
+/*	Sometimes you need to wrap: badges on narrow screens look weird 
+	and nowrap defeats other width constraints, so exclude span */
 	white-space: nowrap !important;
 }
 
@@ -701,6 +703,11 @@ p > a {
 	white-space: nowrap;
 }
 
+#cbi-network-interface .ifacebox img {
+	width: 24px;
+	height: 24px;
+}
+
 .ifacebadge {
 	display: inline-flex;
 	align-items: center;
@@ -713,7 +720,8 @@ p > a {
 .ifacebadge > img {
 	vertical-align: text-bottom;
 	margin: .25em;
-	height: 16px;
+	height: 32px;
+	width: 32px;
 }
 
 .ifacebadge > * {
@@ -778,6 +786,11 @@ p > a {
 .zone-forwards {
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.zone-forwards > * {
+	text-wrap: auto;
 }
 
 .cbi-progressbar {
@@ -863,19 +876,28 @@ p > a {
 }
 
 .alert-message.info {
+	color: var(--secondary-bright-color);
 	background: var(--main-bright-color);
 }
 
 .alert-message.warning {
+	color: var(--secondary-bright-color);
 	background: var(--warning-color);
 }
 
 .alert-message.danger {
+	color: var(--secondary-bright-color);
 	background: var(--danger-color);
 }
 
 .alert-message.success {
+	color: var(--secondary-bright-color);
 	background: var(--success-color);
+}
+
+.alert-message.notice {
+	color: var(--main-bright-color);
+	background: var(--secondary-bright-color);
 }
 
 .alert-message .btn {
@@ -884,6 +906,17 @@ p > a {
 
 .alert-message .btn:hover {
 	box-shadow: 0 0 4px 1px var(--secondary-bright-color);
+}
+
+/* Fix for table text in notifications */
+.alert-message.notice table,
+.alert-message.notice .table,
+.alert-message.notice td,
+.alert-message.notice th,
+.alert-message.notice .td,
+.alert-message.notice .th {
+	color: var(--main-bright-color) !important;
+	background: transparent !important;
 }
 
 @keyframes fade-in {
@@ -949,9 +982,8 @@ input[type="checkbox"],
 input[type="radio"] {
 	--bd-color: var(--main-dark-color);
 	--fg-color: var(--main-dark-color);
-
+	-webkit-appearance: none; /* nonstandard, should remove in future */
 	appearance: none;
-	-webkit-appearance: none;
 	width: 1em;
 	height: 1em;
 	color: var(--fg-color);
@@ -1064,7 +1096,8 @@ input[type="password"] + .btn, input[type="password"] + button {
 
 select {
 	padding: .1rem 0;
-	-webkit-appearance: menulist;
+	-webkit-appearance: menulist; /* nonstandard, should remove in future */
+	appearance: menulist;
 }
 
 textarea {
@@ -1109,6 +1142,7 @@ textarea {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 0 1em 0;
+	align-items: baseline;
 }
 
 .cbi-value > label:first-child {
@@ -1257,6 +1291,12 @@ textarea {
 
 .cbi-dropdown:not(.btn):not(.cbi-button) {
 	box-shadow: inset 0 0 1px var(--main-dark-color);
+}
+
+.cbi-dropdown img {
+	/* the following are necessary to constrain (vector) images of any size */
+	max-height: 1.6em;  /* Adjusts image height to fit slightly larger than text line height */
+	width: auto;  /* Preserves aspect ratio */
 }
 
 .cbi-dropdown > ul {
@@ -1619,6 +1659,12 @@ button.spinning::before, .btn.spinning::before {
 	background: var(--success-color);
 }
 
+.label.notice {
+	background:var(--secondary-bright-color);
+	color:var(--main-bright-color);
+	border: 1px solid var(--main-bright-color);
+}
+
 ul.deps {
 	margin: 0;
 	padding: 0;
@@ -1736,8 +1782,6 @@ ul.errors {
 		padding-bottom: .5em;
 	}
 
-	tr.cbi-section-table-titles[data-title]::before,
-	tr.cbi-section-table-titles,
 	tr.cbi-section-table-descr {
 		display: none;
 	}
@@ -1767,20 +1811,7 @@ ul.errors {
 	}
 
 	td[data-title]::before {
-		content: attr(data-title) ": ";
-		white-space: nowrap;
-		font-weight: bold;
-		width: 40%;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		padding: .2em 0;
-		text-align: left;
-		display: inline-flex;
-		align-items: center;
+		content: none;
 	}
 
 	td[data-title]::after {
@@ -1987,3 +2018,47 @@ ul.errors {
 		display: none;
 	}
 }
+
+/* === STATUS OVERVIEW: HIDE/SHOW BUTTONS === */
+
+/* Create larger buttons for smaller screens (same behaviour as luci-theme-bootstrap) */
+@media screen and (max-width: 480px) {
+  body[data-page='admin-status-overview'] h3, .cbi-section > legend:first-child {
+    line-height: 2em;
+  }
+}
+
+/* Swap the "hide" and "show" button styles to match all other luci-theme, as "hide" is currently using primary style and "show" is currently using secondary style. Also, change mouse icon from text cursor to pointer */
+body[data-page='admin-status-overview'] .cbi-title .label.notice {
+  background: var(--main-bright-color);
+  color: var(--secondary-bright-color);
+  border: 0;
+}
+body[data-page='admin-status-overview'] .cbi-title .label {
+  background: var(--secondary-bright-color);
+  color: var(--main-bright-color);
+  border: 1px solid var(--main-bright-color);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Slightly fade "show" button: no variable for disabled opacity like luci-theme-bootstrap, assuming 0.7 */
+body[data-page='admin-status-overview'] .cbi-title .label.notice {
+ opacity: 0.7;
+}
+
+/* Remove fade when hovered */
+body[data-page='admin-status-overview'] .cbi-title .label.notice:hover {
+ opacity: initial;
+}
+
+/* === END STATUS OVERVIEW: HIDE/SHOW BUTTONS === */
+
+/* === STATUS OVERVIEW: MATCH IFACEBOX COLOUR WITH HEADER === */
+
+/* Set text to var(--secondary-bright-color) when using var(--main-bright-color) for background to match same behaviour as the header of the page, e.g. IPv4 Upstream and IPv6 Upstream boxes */
+body[data-page='admin-status-overview'] .ifacebox-head {
+  color: var(--secondary-bright-color);
+}
+
+/* === END STATUS OVERVIEW: MATCH IFACEBOX COLOUR WITH HEADER === */

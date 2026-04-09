@@ -15,11 +15,11 @@ msgstr ""
 msgid "Advanced Configuration"
 msgstr "Розширена Конфігурація"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:199
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
 msgid "Advanced Linklayer Options"
 msgstr "Розширені параметри канального рівня"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:183
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
 msgid ""
 "Advanced option string to pass to the egress queueing disciplines; no error "
 "checking, use very carefully."
@@ -27,7 +27,7 @@ msgstr ""
 "Рядок розширеного параметра для передачі до застосування без перевірки "
 "помилок, використовуйте дуже обережно."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:184
 msgid ""
 "Advanced option string to pass to the ingress queueing disciplines; no error "
 "checking, use very carefully."
@@ -35,7 +35,7 @@ msgstr ""
 "Розширений рядок параметрів, що передається до дисциплін запасної черги "
 "вхідного потоку; без перевірки помилок, використовуйте дуже обережно."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:199
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
 msgid ""
 "Advanced options will only be used as long as this box is checked (only "
 "needed if MTU > 1500)."
@@ -57,14 +57,14 @@ msgid ""
 "Create log file for this SQM instance under /var/run/sqm/${Interface_name}."
 "[start|stop]-sqm.log."
 msgstr ""
-"Створіти журнальний файл для цього екземпляру SQM в каталозі /var/run/sqm/"
-"${Interface_name}.[start|stop]-sqm.log."
+"Створіти журнальний файл для цього екземпляру SQM в каталозі /var/run/sqm/$"
+"{Interface_name}.[start|stop]-sqm.log."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:160
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
 msgid "Dangerous Configuration"
 msgstr "Небезпечна конфігурація"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:160
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
 msgid "Dangerous options will only be used as long as this box is checked."
 msgstr ""
 "Небезпечні параметри будуть використовуватися тільки тоді, коли цей пункт "
@@ -82,11 +82,11 @@ msgstr ""
 "Швидкість завантаження (кбіт/с) (вхідна) встановлена в 0, щоб селективно "
 "вимкнути вхідне вирівнювання"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:154
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:158
 msgid "ECN (egress)"
 msgstr "ECN (вихідна)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:148
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:152
 msgid "ECN (ingress)"
 msgstr "ECN (вхідна)"
 
@@ -98,15 +98,25 @@ msgstr "Увімкнути SQM"
 msgid "Enable debug logging"
 msgstr "Увімкнути системний журнал"
 
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+msgid "Enable multi-queue config"
+msgstr ""
+
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+msgid ""
+"Enable multi-queue qdisc on supported hardware. If .qos script does not "
+"support mq this option is ignored."
+msgstr ""
+
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:78
 msgid "Enable this SQM instance."
 msgstr "Увімкнути цей екземпляр SQM."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:148
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:152
 msgid "Explicit congestion notification (ECN) status on inbound packets"
 msgstr "Статус явного сповіщення про завантаженість (ECN) на вхідних пакетах"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:154
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:158
 msgid "Explicit congestion notification (ECN) status on outbound packets"
 msgstr "Статус явного сповіщення про завантаженість (ECN) на вихідних пакетах"
 
@@ -114,31 +124,31 @@ msgstr "Статус явного сповіщення про завантаже
 msgid "Grant UCI access for luci-app-sqm"
 msgstr "Надати доступ UCI для luci-app-sqm"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
 msgid "Hard limit on egress queues; leave empty for default."
 msgstr ""
 "Жорстке обмеження на вихідні черги; залиште порожнім для значення за "
 "замовчуванням."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
 msgid "Hard limit on ingress queues; leave empty for default."
 msgstr ""
 "Жорстке обмеження на вхідні черги; залиште порожнім для значення за "
 "замовчуванням."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
 msgid "Hard queue limit (egress)"
 msgstr "Жорстке обмеження черги (вихід)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:164
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:168
 msgid "Hard queue limit (ingress)"
 msgstr "Жорстке обмеження черги (вхід)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:142
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:146
 msgid "Ignore DSCP (ingress)"
 msgstr "Ігнорувати DSCP (вхід)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:142
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:146
 msgid "Ignore DSCP markings on inbound packets"
 msgstr "Ігнорувати маркування DSCP на вхідних пакетах"
 
@@ -146,15 +156,15 @@ msgstr "Ігнорувати маркування DSCP на вхідних па�
 msgid "Interface name"
 msgstr "Назва інтерфейсу"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
 msgid "Latency target (egress)"
 msgstr "Ціль затримки (вихiд)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
 msgid "Latency target (ingress)"
 msgstr "Ціль затримки (вхiд)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
 msgid ""
 "Latency target for egress, e.g. 5ms [units: s, ms, or us]; leave empty for "
 "automatic selection, put in the word default for the qdisc's default."
@@ -163,13 +173,13 @@ msgstr ""
 "ус]; залиште порожнім, щоб автоматично вибрати значення, або введіть слово "
 "\"default\" для значення за замовчуванням qdisc."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:172
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:176
 msgid ""
 "Latency target for ingress, e.g 5ms [units: s, ms, or us]; leave empty for "
 "automatic selection, put in the word default for the qdisc's default."
 msgstr ""
-"Ціль затримки для вхідного трафіку, наприклад, 5 мс [одиниці: с, мс, або ус];"
-" залиште порожнім, щоб автоматично вибрати значення, або введіть слово "
+"Ціль затримки для вхідного трафіку, наприклад, 5 мс [одиниці: с, мс, або "
+"ус]; залиште порожнім, щоб автоматично вибрати значення, або введіть слово "
 "\"default\" для значення за замовчуванням qdisc."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:74
@@ -178,11 +188,11 @@ msgstr ""
 "Адаптація протоколу передачі даних у рівні протоколу з'єднання (Link Layer "
 "Adaptation)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:191
 msgid "Link layer"
 msgstr "Протокол з'єднання (Link Layer)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:218
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:222
 msgid "Linklayer adaptation mechanism"
 msgstr "Механізм адаптації протоколу з'єднання"
 
@@ -199,7 +209,7 @@ msgstr ""
 msgid "Log verbosity"
 msgstr "Рівень деталізації журналу"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:207
 msgid ""
 "Maximal Size for size and rate calculations, tcMTU (byte); needs to be >= "
 "interface MTU + overhead"
@@ -207,22 +217,22 @@ msgstr ""
 "Максимальний розмір для розрахунків розміру і швидкості, tcMTU (в байтах); "
 "має бути >= MTU інтерфейсу + навантаження"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:203
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:207
 msgid "Maximum packet size"
 msgstr "Максимальний розмір пакету"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:213
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:217
 msgid ""
 "Minimal packet size, MPU (byte); needs to be > 0 for ethernet size tables"
 msgstr ""
 "Мінімальний розмір пакету, MPU (у байтах); має бути > 0 для таблиць розмірів "
 "Ethernet"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:213
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:217
 msgid "Minimum packet size"
 msgstr "Мінімальний розмір пакету"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:208
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:212
 msgid ""
 "Number of entries in size/rate tables, TSIZE; for ATM choose TSIZE = (tcMTU "
 "+ 1) / 16"
@@ -230,15 +240,15 @@ msgstr ""
 "Кількість записів у таблицях розміру/швидкості, TSIZE; для ATM виберіть "
 "TSIZE = (tcMTU + 1) / 16"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:193
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:197
 msgid "Per Packet Overhead (bytes)"
 msgstr "Навантаження на кожен пакет (у байтах)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:183
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
 msgid "Qdisc options (egress)"
 msgstr "Опції qdisc (для вихідного трафіку)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:180
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:184
 msgid "Qdisc options (ingress)"
 msgstr "Опції qdisc (для вхідного трафіку)"
 
@@ -258,7 +268,7 @@ msgstr "Дисципліна черги"
 msgid "Queues"
 msgstr "Черги"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:208
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:212
 msgid "Rate table size"
 msgstr "Розмір таблиці швидкості"
 
@@ -270,11 +280,11 @@ msgstr "SQM QoS"
 msgid "Smart Queue Management"
 msgstr "Інтелектуальне керування чергою (Smart Queue Management)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:140
 msgid "Squash DSCP (ingress)"
 msgstr "Схоплення DSCP (для вхідного трафіку)"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:136
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:140
 msgid "Squash DSCP markings on inbound packets"
 msgstr "Схоплення позначок DSCP на вхідних пакетах"
 
@@ -311,11 +321,11 @@ msgstr ""
 msgid "Verbosity of SQM's output into the system log."
 msgstr "Рівень деталізації виведення SQM у системний журнал."
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:187
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:191
 msgid "Which link layer technology to account for"
 msgstr "Яку технологію протоколу з'єднання враховувати"
 
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:218
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:222
 msgid "Which linklayer adaptation mechanism to use; for testing only"
 msgstr ""
 "Який механізм адаптації протоколу з'єднання використовувати; тільки для "
@@ -332,9 +342,9 @@ msgstr ""
 "довжиною активної черги (AQM) та пріоритезацію на одному інтерфейсі мережі."
 
 #: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:107
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:149
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:155
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:188
-#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:219
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:153
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:159
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:192
+#: applications/luci-app-sqm/htdocs/luci-static/resources/view/network/sqm.js:223
 msgid "default"
 msgstr "за замовчуванням"

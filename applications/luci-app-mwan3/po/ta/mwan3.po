@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-25 20:08+0000\n"
+"PO-Revision-Date: 2025-06-16 11:44+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsmwan3/ta/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:211
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:227
@@ -78,8 +78,7 @@ msgstr "%s: இந்த நிகழ்வைத் தூண்டிய ச�
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:44
 msgid ""
 "%s: Name of the interface which went up or down (e.g. \"wan\" or \"wwan\")"
-msgstr ""
-"%s: மேலே அல்லது கீழே சென்ற இடைமுகத்தின் பெயர் (எ.கா. \"WAN\" அல்லது \"WWAN\")"
+msgstr "%s: மேலே அல்லது கீழே சென்ற இடைமுகத்தின் பெயர் (எ.கா. \"WAN\" அல்லது \"WWAN\")"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:40
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:41
@@ -88,13 +87,11 @@ msgstr "* %s: Netifd மற்றும் Mwan3Track ஆல் அழைக்�
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:43
 msgid "* %s: Is only called by mwan3track if tracking has failed"
-msgstr ""
-"* %s: கண்காணிப்பு தோல்வியுற்றால் மட்டுமே MWAN3Track ஆல் அழைக்கப்படுகிறது"
+msgstr "* %s: கண்காணிப்பு தோல்வியுற்றால் மட்டுமே MWAN3Track ஆல் அழைக்கப்படுகிறது"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:42
 msgid "* %s: Is only called by mwan3track if tracking was successful"
-msgstr ""
-"* %s: கண்காணிப்பு வெற்றிகரமாக இருந்தால் மட்டுமே MWAN3Track ஆல் அழைக்கப்படுகிறது"
+msgstr "* %s: கண்காணிப்பு வெற்றிகரமாக இருந்தால் மட்டுமே MWAN3Track ஆல் அழைக்கப்படுகிறது"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:71
 msgid "-- Interface Selection --"
@@ -114,13 +111,11 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:62
 msgid "Acceptable values: 1-1000. Defaults to 1 if not set"
-msgstr ""
-"ஏற்றுக்கொள்ளக்கூடிய மதிப்புகள்: 1-1000. இயல்புநிலைகள் அமைக்கப்படாவிட்டால் 1 க்கு"
+msgstr "ஏற்றுக்கொள்ளக்கூடிய மதிப்புகள்: 1-1000. இயல்புநிலைகள் அமைக்கப்படாவிட்டால் 1 க்கு"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:58
 msgid "Acceptable values: 1-256. Defaults to 1 if not set"
-msgstr ""
-"ஏற்றுக்கொள்ளக்கூடிய மதிப்புகள்: 1-256. இயல்புநிலைகள் அமைக்கப்படாவிட்டால் 1 க்கு"
+msgstr "ஏற்றுக்கொள்ளக்கூடிய மதிப்புகள்: 1-256. இயல்புநிலைகள் அமைக்கப்படாவிட்டால் 1 க்கு"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:26
 msgid "Alert"
@@ -128,8 +123,7 @@ msgstr "விழிப்புணர்வு"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:37
 msgid "Also scan this Routing table for connected networks"
-msgstr ""
-"இணைக்கப்பட்ட நெட்வொர்க்குகளுக்கு இந்த ரூட்டிங் அட்டவணையை ச்கேன் செய்யுங்கள்"
+msgstr "இணைக்கப்பட்ட நெட்வொர்க்குகளுக்கு இந்த ரூட்டிங் அட்டவணையை ச்கேன் செய்யுங்கள்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:65
 msgid "Check IP rules"
@@ -143,7 +137,7 @@ msgstr "இணைப்பு தரத்தை சரிபார்க்க�
 msgid "Check routing table"
 msgstr "ரூட்டிங் அட்டவணையை சரிபார்க்கவும்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:95
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:96
 msgid "Collecting data ..."
 msgstr "தரவு சேகரித்தல் ..."
 
@@ -167,23 +161,22 @@ msgstr "இலக்கு முகவரி"
 msgid "Destination port"
 msgstr "இலக்கு துறைமுகம்"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:29
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:31
 msgid "Diagnostics"
 msgstr "கண்டறிதல்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:56
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:57
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:66
 msgid "Disabled"
 msgstr "முடக்கப்பட்டது"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:267
 msgid ""
 "Downed interface will be deemed up after this many successful ping tests"
-msgstr ""
-"இந்த பல வெற்றிகரமான பிங் சோதனைகளுக்குப் பிறகு வீழ்ச்சியடைந்த இடைமுகம் கருதப்படும்"
+msgstr "இந்த பல வெற்றிகரமான பிங் சோதனைகளுக்குப் பிறகு வீழ்ச்சியடைந்த இடைமுகம் கருதப்படும்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:40
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:41
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:49
 msgid "Downtime"
 msgstr "வேலையில்லா நேரம்"
 
@@ -202,8 +195,7 @@ msgstr "இயக்கப்பட்டது"
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:118
 msgid ""
 "Enables firewall rule logging (global mwan3 logging must also be enabled)"
-msgstr ""
-"ஃபயர்வால் விதி பதிவை இயக்குகிறது (உலகளாவிய MWAN3 லாக்ங்கும் இயக்கப்பட வேண்டும்)"
+msgstr "ஃபயர்வால் விதி பதிவை இயக்குகிறது (உலகளாவிய MWAN3 லாக்ங்கும் இயக்கப்பட வேண்டும்)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/globals.js:20
 msgid "Enables global firewall logging"
@@ -257,13 +249,17 @@ msgstr "கான்ட்ராக் அட்டவணையை பறிக�
 msgid "Flush global firewall conntrack table on interface events"
 msgstr "இடைமுக நிகழ்வுகளில் உலகளாவிய ஃபயர்வால் கான்ட்ராக் அட்டவணையை பறிக்கவும்"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:56
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:59
 msgid "Globals"
 msgstr "குளோபல்ச்"
 
+#: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:51
+msgid "Grant access for luci-app-mwan3 configuration"
+msgstr ""
+
 #: applications/luci-app-mwan3/root/usr/share/rpcd/acl.d/luci-app-mwan3.json:3
-msgid "Grant UCI access for luci-app-mwan3"
-msgstr "லூசி-ஆப்-மவான் 3 க்கான யுசிஐ அணுகலை வழங்கவும்"
+msgid "Grant access for luci-app-mwan3 status information"
+msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:68
 msgid "Hotplug ifdown"
@@ -271,7 +267,7 @@ msgstr "HotPlug ifdown"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:67
 msgid "Hotplug ifup"
-msgstr "Hotplug ifup"
+msgstr "சூடானசெருகி மேலிருந்தால்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:107
 msgid "IPset"
@@ -307,10 +303,10 @@ msgstr "தொடக்க நிலை"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:50
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/diagnostics.js:83
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:64
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:76
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:100
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:64
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:77
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:101
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:67
 msgid "Interface"
 msgstr "இடைமுகம்"
 
@@ -332,8 +328,8 @@ msgid ""
 "Interfaces may not share the same name as configured members, policies or "
 "rules."
 msgstr ""
-"கட்டமைக்கப்பட்ட உறுப்பினர்கள், கொள்கைகள் அல்லது விதிகள் போன்ற அதே பெயரை இடைமுகங்கள் பகிர்ந்து"
-" கொள்ளக்கூடாது."
+"கட்டமைக்கப்பட்ட உறுப்பினர்கள், கொள்கைகள் அல்லது விதிகள் போன்ற அதே பெயரை இடைமுகங்கள் "
+"பகிர்ந்து கொள்ளக்கூடாது."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:65
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:59
@@ -386,14 +382,13 @@ msgstr ""
 "ஒற்றை அல்லது பல துறைமுகம் (கள்) (எ.கா. \"22\" அல்லது \"80,443\") அல்லது மேற்கோள்கள் "
 "இல்லாமல் (எ.கா. \"1024: 2048\") உள்ளிடப்படலாம்"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:72
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:75
 msgid "Member"
 msgstr "உறுப்பினர்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:19
 msgid "Member interfaces with lower metrics are used first."
-msgstr ""
-"குறைந்த அளவீடுகளைக் கொண்ட உறுப்பினர் இடைமுகங்கள் முதலில் பயன்படுத்தப்படுகின்றன."
+msgstr "குறைந்த அளவீடுகளைக் கொண்ட உறுப்பினர் இடைமுகங்கள் முதலில் பயன்படுத்தப்படுகின்றன."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:20
 msgid "Member interfaces with the same metric will be load-balanced."
@@ -423,9 +418,9 @@ msgstr ""
 msgid "Metric"
 msgstr "மெட்ரிக்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:18
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:19
 #: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:3
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:46
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:47
 msgid "MultiWAN Manager"
 msgstr "மல்டிவான் மேலாளர்"
 
@@ -449,7 +444,7 @@ msgstr "மல்டிவான் மேலாளர் - உறுப்ப�
 msgid "MultiWAN Manager - Notify"
 msgstr "மல்டிவான் மேலாளர் - அறிவிக்கவும்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:92
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:93
 msgid "MultiWAN Manager - Overview"
 msgstr "மல்டிவான் மேலாளர் - கண்ணோட்டம்"
 
@@ -489,20 +484,18 @@ msgid ""
 "Name of IPset rule. Requires IPset rule in /etc/dnsmasq.conf (eg \"ipset=/"
 "youtube.com/youtube\")"
 msgstr ""
-"பெயர் of IPset rule. Requires IPset விதி in /etc/dnsmasq.conf (eg "
-"\"ipset=/youtube.com/youtube\")"
+"பெயர் of IPset rule. Requires IPset விதி in /etc/dnsmasq.conf (eg \"ipset=/"
+"youtube.com/youtube\")"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:24
 msgid "Names may contain characters A-Z, a-z, 0-9, _ and no spaces-"
-msgstr ""
-"பெயர்களில் A-Z, A-Z, 0-9, _ எழுத்துக்கள் இருக்கலாம் மற்றும் இடைவெளிகள் இல்லை-"
+msgstr "பெயர்களில் A-Z, a-z, 0-9, _ எழுத்துக்கள் இருக்கலாம் மற்றும் இடைவெளிகள் இல்லை-"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/member.js:19
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:22
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:27
 msgid "Names may contain characters A-Z, a-z, 0-9, _ and no spaces."
-msgstr ""
-"பெயர்களில் A-Z, A-Z, 0-9, _ எழுத்துக்கள் இருக்கலாம் மற்றும் இடைவெளிகள் இல்லை."
+msgstr "பெயர்களில் A-Z, a-z, 0-9, _ எழுத்துக்கள் இருக்கலாம் மற்றும் இடைவெளிகள் இல்லை."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:23
 msgid "Names must be 15 characters or less."
@@ -510,19 +503,18 @@ msgstr "பெயர்கள் 15 எழுத்துக்கள் அல�
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:23
 msgid "Names must match the interface name found in /etc/config/network."
-msgstr ""
-"பெயர்கள்/etc/config/நெட்வொர்க்கில் காணப்படும் இடைமுக பெயருடன் பொருந்த வேண்டும்."
+msgstr "பெயர்கள்/etc/config/நெட்வொர்க்கில் காணப்படும் இடைமுக பெயருடன் பொருந்த வேண்டும்."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:98
 msgid "No"
 msgstr "இல்லை"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:20
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:21
 msgid "No MWAN interfaces found"
 msgstr "மவான் இடைமுகங்கள் எதுவும் கிடைக்கவில்லை"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:43
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:51
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:44
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:52
 msgid "No Tracking"
 msgstr "கண்காணிப்பு இல்லை"
 
@@ -538,23 +530,23 @@ msgstr "குறிப்புகள்:"
 msgid "Notice"
 msgstr "அறிவிப்பு"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:96
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:99
 msgid "Notify"
 msgstr "அறிவிக்கவும்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:62
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:37
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:45
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:38
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:46
 msgid "Offline"
 msgstr "இணையமில்லாமல்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:61
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:30
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:39
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:31
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:40
 msgid "Online"
 msgstr "ஆன்லைனில்"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:13
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:15
 msgid "Overview"
 msgstr "கண்ணோட்டம்"
 
@@ -595,8 +587,8 @@ msgid ""
 "Policies are profiles grouping one or more members controlling how Mwan3 "
 "distributes traffic."
 msgstr ""
-"கொள்கைகள் என்பது MWAN3 எவ்வாறு போக்குவரத்தை விநியோகிக்கிறது என்பதைக் கட்டுப்படுத்தும் ஒன்று"
-" அல்லது அதற்கு மேற்பட்ட உறுப்பினர்களைக் குறிக்கும் சுயவிவரங்கள்."
+"கொள்கைகள் என்பது MWAN3 எவ்வாறு போக்குவரத்தை விநியோகிக்கிறது என்பதைக் கட்டுப்படுத்தும் "
+"ஒன்று அல்லது அதற்கு மேற்பட்ட உறுப்பினர்களைக் குறிக்கும் சுயவிவரங்கள்."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:24
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:45
@@ -607,7 +599,7 @@ msgstr ""
 "கட்டமைக்கப்பட்ட இடைமுகங்கள், உறுப்பினர்கள் அல்லது விதிகள் போன்ற பெயரை கொள்கைகள் பகிர்ந்து "
 "கொள்ளக்கூடாது"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:80
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:83
 msgid "Policy"
 msgstr "கொள்கை"
 
@@ -647,7 +639,7 @@ msgstr "ரூட்டிங் அட்டவணை %d"
 msgid "Routing table lookup"
 msgstr "ரூட்டிங் அட்டவணை தேடல்"
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:88
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:91
 msgid "Rule"
 msgstr "விதி"
 
@@ -669,8 +661,8 @@ msgid ""
 "Rules may not share the same name as configured interfaces, members or "
 "policies."
 msgstr ""
-"கட்டமைக்கப்பட்ட இடைமுகங்கள், உறுப்பினர்கள் அல்லது கொள்கைகள் போன்ற அதே பெயரை விதிகள் பகிர்ந்து"
-" கொள்ளக்கூடாது."
+"கட்டமைக்கப்பட்ட இடைமுகங்கள், உறுப்பினர்கள் அல்லது கொள்கைகள் போன்ற அதே பெயரை விதிகள் "
+"பகிர்ந்து கொள்ளக்கூடாது."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:20
 msgid "Rules specify which traffic will use a particular MWAN policy."
@@ -691,10 +683,10 @@ msgstr "மூல முகவரி"
 msgid "Source port"
 msgstr "மூல துறைமுகம்"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:65
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:82
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:106
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:21
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:66
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:83
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:107
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:23
 msgid "Status"
 msgstr "நிலை"
 
@@ -728,8 +720,7 @@ msgstr "ச்கிரிப்ட்டின் முதல் வரி &#3
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:37
 msgid ""
 "There are three main environment variables that are passed to this script."
-msgstr ""
-"இந்த ச்கிரிப்ட்டுக்கு மூன்று முக்கிய சுற்றுச்சூழல் மாறிகள் அனுப்பப்படுகின்றன."
+msgstr "இந்த ச்கிரிப்ட்டுக்கு மூன்று முக்கிய சுற்றுச்சூழல் மாறிகள் அனுப்பப்படுகின்றன."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:289
 msgid ""
@@ -751,8 +742,7 @@ msgstr ""
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/notify.js:28
 msgid "This section allows you to modify the content of \"/etc/mwan3.user\"."
-msgstr ""
-"\"/Etc/mwan3.user\" இன் உள்ளடக்கத்தை மாற்ற இந்த பிரிவு உங்களை அனுமதிக்கிறது."
+msgstr "\"/Etc/mwan3.user\" இன் உள்ளடக்கத்தை மாற்ற இந்த பிரிவு உங்களை அனுமதிக்கிறது."
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:71
 msgid "Tracking hostname or IP address"
@@ -796,7 +786,7 @@ msgstr ""
 "எந்தவொரு விதியும் பொருந்தாத போக்குவரத்து முதன்மையான ரூட்டிங் அட்டவணையைப் பயன்படுத்தி "
 "திசைதிருப்பப்படுகிறது."
 
-#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:37
+#: applications/luci-app-mwan3/root/usr/share/luci/menu.d/luci-app-mwan3.json:39
 msgid "Troubleshooting"
 msgstr "சரிசெய்தல்"
 
@@ -804,10 +794,10 @@ msgstr "சரிசெய்தல்"
 msgid "Unable to save contents: %s"
 msgstr "உள்ளடக்கங்களை சேமிக்க முடியவில்லை: %s"
 
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:33
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:47
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:42
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:55
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:34
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/status/overview.js:48
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:43
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/status/include/90_mwan3.js:56
 msgid "Uptime"
 msgstr "நேரம்"
 
@@ -831,7 +821,7 @@ msgid "Yes"
 msgstr "ஆம்"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:65
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:128
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:127
 msgid "blackhole (drop)"
 msgstr "பிளாக்ஓல் (துளி)"
 
@@ -840,7 +830,7 @@ msgid "connected (mwan3)"
 msgstr "இணைக்கப்பட்ட (MWAN3)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:66
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:129
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:128
 msgid "default (use main routing table)"
 msgstr "இயல்புநிலை (பிரதான ரூட்டிங் அட்டவணையைப் பயன்படுத்தவும்)"
 
@@ -850,13 +840,16 @@ msgstr "துண்டிக்கப்பட்டது (MWAN3)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:283
 msgid "ifdown (netifd)"
-msgstr "ifdown (netifd)"
+msgstr "கீழ்இருந்தால் (netifd)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/interface.js:282
 msgid "ifup (netifd)"
-msgstr "ifup (netifd)"
+msgstr "மேலிருந்தால் (netifd)"
 
 #: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/policy.js:64
-#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:127
+#: applications/luci-app-mwan3/htdocs/luci-static/resources/view/mwan3/network/rule.js:126
 msgid "unreachable (reject)"
 msgstr "அணுக முடியாத (நிராகரிக்கவும்)"
+
+#~ msgid "Grant UCI access for luci-app-mwan3"
+#~ msgstr "லூசி-ஆப்-மவான் 3 க்கான யுசிஐ அணுகலை வழங்கவும்"

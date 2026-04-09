@@ -4,11 +4,13 @@
 		"read": {
 			"ubus": {
 				"luci.pbr": [
-					"getGateways",
 					"getInitList",
 					"getInitStatus",
 					"getInterfaces",
 					"getPlatformSupport"
+				],
+				"service": [
+					"list"
 				]
 			},
 			"file": {

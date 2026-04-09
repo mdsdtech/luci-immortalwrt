@@ -1,8 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-08-28 23:17+0000\n"
-"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"PO-Revision-Date: 2025-07-15 10:11+0000\n"
+"Last-Translator: Stefan Bjornelund the Gnome "
+"<stefan.bjornelund.gnome@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationswatchcat/sv/>\n"
 "Language: sv\n"
@@ -10,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:94
 msgid ""
@@ -20,6 +21,12 @@ msgid ""
 "to fail. Enter the number of seconds to wait for the soft reboot to fail or "
 "use 0 to disable the forced reboot delay."
 msgstr ""
+"<i> Gäller för Ping Reboot och Periodic Reboot lägen </i> <br /> När du "
+"startar om routern kommer tjänsten att utlösa en mjuk omstart. Att ange ett "
+"icke-nollvärde här kommer att utlösa en försenad hård omstart om den mjuka "
+"omstarten skulle misslyckas. Ange antalet sekunder för att vänta på att den "
+"mjuka omstarten ska misslyckas eller använda 0 för att inaktivera den "
+"påtvingade omstarten."
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:111
 msgid ""
@@ -33,6 +40,9 @@ msgid ""
 "<i>Applies to Ping Reboot, Restart Interface, and Run Script modes</i> <br /"
 "> Specify the interface to monitor and react if a ping over it fails."
 msgstr ""
+"<i>Gäller för lägena ping-omstart, starta om gränssnitt och kör skript</i> "
+"<br /> Ange gränssnittet att bevaka och reagera om en pingning över den "
+"misslyckas."
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:60
 msgid "Address family for pinging the host"
@@ -60,7 +70,7 @@ msgstr "Generella inställningar"
 
 #: applications/luci-app-watchcat/root/usr/share/rpcd/acl.d/luci-app-watchcat.json:3
 msgid "Grant access to LuCI app watchcat"
-msgstr ""
+msgstr "Godkänn åtkomst till LuCi-appen watchcat"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:12
 msgid ""
@@ -70,8 +80,8 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:52
-msgid "Host To Check"
-msgstr "Värd att kontrollera"
+msgid "Hosts To Check"
+msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:71
 msgid ""
@@ -88,14 +98,16 @@ msgid "Huge: 1492 bytes"
 msgstr "Jättestor: 1492 bytes"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:52
-msgid "IP address or hostname to ping."
-msgstr "IP-adress eller värdnamn att pinga."
+msgid "IP addresses or hostnames to ping."
+msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:118
 msgid ""
 "If using ModemManager, then before restarting the interface, set the modem "
 "to be allowed to use any band."
 msgstr ""
+"Ställ in att modemet ska tillåtas att använda vilket band som helst om "
+"ModemManager används före gränssnittet startas om."
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:41
 msgid ""
@@ -145,7 +157,7 @@ msgstr "Paketstorlek för pingning"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:27
 msgid "Ping Reboot"
-msgstr ""
+msgstr "Pinga omstart"
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:23
 msgid ""
@@ -203,53 +215,8 @@ msgstr "Watchcat"
 msgid "Windows: 32 bytes"
 msgstr "Fönster: 32 bytes"
 
-#~ msgid "Forced reboot delay"
-#~ msgstr "Fördröjning av påtvingad omstart"
+#~ msgid "Host To Check"
+#~ msgstr "Värd att kontrollera"
 
-#~ msgid "Host address to ping"
-#~ msgstr "Värdadress att pinga"
-
-#~ msgid ""
-#~ "How often to check internet connection. Default unit is seconds, you can "
-#~ "you use the suffix 'm' for minutes, 'h' for hours or 'd' for days"
-#~ msgstr ""
-#~ "Hur ofta internet-anslutningen ska kollas. Standardenheten är sekunder, "
-#~ "du kan använda tillägget 'm' för minutrar, 't' för timmar eller 'd' för "
-#~ "dagar"
-
-#~ msgid ""
-#~ "In periodic mode, it defines the reboot period. In internet mode, it "
-#~ "defines the longest period of time without internet access before a "
-#~ "reboot is engaged.Default unit is seconds, you can use the suffix 'm' for "
-#~ "minutes, 'h' for hours or 'd' for days"
-#~ msgstr ""
-#~ "I periodiskt läge definierar den omstartperioden. I internetläge "
-#~ "definierar den den längsta tiden utan internetåtkomst innan en omstart "
-#~ "aktiveras. Standardenheten är sekunder, du kan använda suffixet 'm' i "
-#~ "minuter, 'h' i timmar eller 'd' i dagar"
-
-#~ msgid "Operating mode"
-#~ msgstr "Driftsläge"
-
-#~ msgid "Ping host"
-#~ msgstr "Pinga värd"
-
-#~ msgid "Ping period"
-#~ msgstr "Period för pingning"
-
-#~ msgid ""
-#~ "Watchcat allows configuring a periodic reboot when the Internet "
-#~ "connection has been lost for a certain period of time."
-#~ msgstr ""
-#~ "Watchcat gör det möjligt att konfigurera en periodisk omstart när "
-#~ "Internet-anslutningen har gått förlorad under en viss tid."
-
-#~ msgid ""
-#~ "When rebooting the system, the watchcat will trigger a soft reboot. "
-#~ "Entering a non zero value here will trigger a delayed hard reboot if the "
-#~ "soft reboot fails. Enter a number of seconds to enable, use 0 to disable"
-#~ msgstr ""
-#~ "När systemet startar om kommer watchcat att utlösa en mjuk omstart. Om du "
-#~ "anger ett värde som inte är noll här kommer det att trigga en försenad "
-#~ "hård omstart om den mjuka omstarten misslyckats. Ange ett antal sekunder "
-#~ "för att aktivera, använd 0 för att inaktivera"
+#~ msgid "IP address or hostname to ping."
+#~ msgstr "IP-adress eller värdnamn att pinga."

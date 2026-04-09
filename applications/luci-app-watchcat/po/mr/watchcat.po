@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:52
-msgid "Host To Check"
+msgid "Hosts To Check"
 msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:71
@@ -88,7 +88,7 @@ msgid "Huge: 1492 bytes"
 msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:52
-msgid "IP address or hostname to ping."
+msgid "IP addresses or hostnames to ping."
 msgstr ""
 
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:118
@@ -200,9 +200,3 @@ msgstr ""
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:82
 msgid "Windows: 32 bytes"
 msgstr ""
-
-#~ msgid "Forced reboot delay"
-#~ msgstr "सक्तीने रीबूट विलंब"
-
-#~ msgid "Host address to ping"
-#~ msgstr "पिंग होस्ट पत्ता"

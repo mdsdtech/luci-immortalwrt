@@ -343,9 +343,11 @@ small {
 	float: left;
 	overflow-x: auto;
 	width: calc(0% + 15rem);
+	min-width: max-content;
 	height: calc(100% - 4rem);
 	background-color: var(--menu-bg-color);
 	transition: visibility 400ms, width 400ms;
+	z-index: 800;
 }
 
 .main-right {
@@ -368,7 +370,9 @@ small {
 	float: left;
 }
 
-.nowrap:not(.td) {
+.nowrap:not(.td span) {
+/*	Sometimes you need to wrap: badges on narrow screens look weird 
+	and nowrap defeats other width constraints, so exclude span */
 	white-space: nowrap;
 }
 
@@ -497,36 +501,36 @@ header > .fill > .container > .status > * {
 
 .alert-message.notice,
 .label.notice {
-	background-color: var(--notice-color);
-	color: var(--on-notice-color);
+	background-color: var(--notice-color) !important;
+	color: var(--on-notice-color) !important;
 }
 
 .alert-message.danger,
 .btn.danger,
 .label.danger {
-	background-color: var(--danger-color);
-	color: var(--on-danger-color);
+	background-color: var(--danger-color) !important;
+	color: var(--on-danger-color) !important;
 }
 
 .alert-message.warning,
 .btn.warning,
 .label.warning {
-	background-color: var(--warning-color);
-	color: var(--on-warning-color);
+	background-color: var(--warning-color) !important;
+	color: var(--on-warning-color) !important;
 }
 
 .alert-message.success,
 .btn.success,
 .label.success {
-	background-color: var(--success-color);
-	color: var(--on-success-color);
+	background-color: var(--success-color) !important;
+	color: var(--on-success-color) !important;
 }
 
 .alert-message.error,
 .btn.error,
 .label.error {
-	background-color: var(--on-error-color);
-	color: var(--error-color);
+	background-color: var(--error-color) !important;
+	color: var(--on-error-color) !important;
 }
 
 [data-indicator]:not([data-style="inactive"]) {
@@ -536,6 +540,17 @@ header > .fill > .container > .status > * {
 .container .alert,
 .container .alert-message {
 	margin-top: 1rem;
+}
+
+/* Fix for table text in notifications - ensures table content inherits notification colors */
+.alert-message.notice table,
+.alert-message.notice .table,
+.alert-message.notice td,
+.alert-message.notice th,
+.alert-message.notice .td,
+.alert-message.notice .th {
+	color: var(--on-notice-color) !important;
+	background: transparent !important;
 }
 
 .main > .main-left > .nav {
@@ -951,7 +966,8 @@ td > table > tbody > tr > td,
 	border-radius: .2rem;
 	background-color: #f0f0f0;
 	background-image: none;
-	-webkit-appearance: none;
+	-webkit-appearance: none;  /* nonstandard, should remove in future */
+	appearance: none;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
 }
@@ -972,7 +988,8 @@ td > table > tbody > tr > td,
 }
 
 .cbi-button:not(select) {
-	-webkit-appearance: none !important;
+	-webkit-appearance: none !important;  /* nonstandard, should remove in future */
+	appearance: none !important;
 }
 
 .cbi-button + .cbi-button {
@@ -1253,6 +1270,7 @@ td > table > tbody > tr > td,
 	display: inline-block;
 	width: 100%;
 	padding: .35rem 1rem .2rem 1rem;
+	align-items: baseline;
 }
 
 .cbi-value ul {
@@ -1300,30 +1318,20 @@ td > table > tbody > tr > td,
 }
 
 .td[data-title]::before {
-	font-weight: bold;
-	display: none;
-	padding: .25rem 0;
-	content: attr(data-title) ":\20";
-	text-align: left;
-	white-space: nowrap;
+	content: none;
 }
 
 .tr.placeholder .td[data-title]::before {
 	display: none;
 }
 
+.tr.cbi-section-table-titles {
+	font-weight: bold;
+}
+
 .tr[data-title]::before,
 .tr.cbi-section-table-titles.named::before {
-	font-weight: bold;
-	display: table-cell;
-	align-self: center;
-	flex: 1 1 5%;
-	padding: .25rem;
-	content: attr(data-title) "\20";
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	word-wrap: break-word;
+	content: none;
 }
 
 .cbi-rowstyle-1 {
@@ -1462,6 +1470,12 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 	margin-top: -3px;
 }
 
+.cbi-dropdown img {
+	/* the following are necessary to constrain (vector) images of any size */
+	max-height: 1.6em;  /* Adjusts image height to fit slightly larger than text line height */
+	width: auto;  /* Preserves aspect ratio */
+}
+
 .cbi-dropdown > ul {
 	display: flex;
 	overflow-x: hidden;
@@ -1586,6 +1600,14 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 	color: var(--main-menu-color);
 }
 
+.cbi-dropdown.btn.cbi-button.cbi-button-positive.important > ul > li[display] {
+	color: var(--white-color);
+}
+
+.cbi-dropdown[open] > ul.dropdown > li[tabindex] {
+	color: var(--black-color) !important;
+}
+
 .cbi-dropdown > ul > li[display],
 .cbi-dropdown[open] > ul.preview,
 .cbi-dropdown[open] > ul.dropdown > li,
@@ -1618,6 +1640,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 
 .cbi-dropdown[open] > ul.dropdown > li[selected] {
 	background: #b0d0f0;
+	color: var(--black-color);
 }
 
 .cbi-dropdown[open] > ul.dropdown > li.focus,
@@ -1628,6 +1651,7 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .cbi-dropdown[open] > ul.dropdown > li:last-child {
 	margin-bottom: 0;
 	border-bottom: 0;
+	color: var(--black-color);
 }
 
 .cbi-dropdown[open] > ul.dropdown > li[unselectable] {
@@ -1774,13 +1798,14 @@ body:not(.Interfaces) .cbi-rowstyle-2:first-child {
 .modal .button-row {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.modal .button-row > :not(:last-child) {
+.modal .button-row > button:not(:first-of-type) {
 	margin-right: .5em;
 }
 
-.modal .button-row > :first-child {
+.modal .button-row > button:first-of-type {
 	margin-right: auto;
 }
 
@@ -1807,7 +1832,7 @@ body.modal-overlay-active #modal_overlay {
 	left: .2em;
 	width: 32px;
 	content: "";
-	background: url(../resources/icons/loading.gif) no-repeat center;
+	background: url(../resources/icons/loading.svg) no-repeat center;
 	background-size: 16px;
 }
 
@@ -1869,6 +1894,12 @@ body.modal-overlay-active #modal_overlay {
 	border-bottom: thin solid #ccc;
 	background: #eee;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.ifacebadge img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
 }
 
 td > .ifacebadge,
@@ -1934,7 +1965,6 @@ td > .ifacebadge,
 
 #syslog {
 	font-size: small;
-	overflow-y: hidden;
 	width: 100%;
 	min-height: 15rem;
 	padding: 1rem;
@@ -2058,6 +2088,11 @@ td > .ifacebadge,
 	padding: .25em;
 }
 
+#cbi-network-interface .ifacebox img {
+	width: 24px;
+	height: 24px;
+}
+
 .cbi-image-button {
 	margin-left: .5rem;
 }
@@ -2178,10 +2213,12 @@ span[data-tooltip] .label {
 .zone-forwards {
 	display: flex;
 	min-width: 10rem;
+	flex-wrap: nowrap;
 }
 
 .zone-forwards > * {
 	flex: 1 1 45%;
+	text-wrap: auto;
 }
 
 .zone-forwards > span {
@@ -2546,17 +2583,13 @@ input[name="nslookup"] {
 }
 
 /* IE hacks */
-@media all and (-ms-high-contrast: none) {
+@media all {
 	.main > .main-left > .nav > .slide > .menu::before {
 		top: 30.25%;
 	}
 
 	.main > .main-left > .nav > li:last-child::before {
 		top: 20%;
-	}
-
-	.showSide::before {
-		top: -12px;
 	}
 }
 
@@ -3139,12 +3172,78 @@ input[name="nslookup"] {
 	::-webkit-scrollbar-thumb {
 		background: #9e9e9e;
 	}
-
+/*
 	::-webkit-scrollbar-thumb:hover {
 		background: #757575;
 	}
 
 	::-webkit-scrollbar-thumb:active {
 		background: #424242;
+	}*/
+}
+
+/* === STATUS OVERVIEW: HIDE/SHOW BUTTONS === */
+
+/* Change mouse icon from text cursor to pointer, and fix buttons not being same min-width */
+body[data-page='admin-status-overview'] .cbi-title .label {
+	cursor: pointer;
+	min-width: 5.2em !important;
+}
+
+/* Create larger buttons for smaller screens (same behaviour as luci-theme-bootstrap) */
+@media screen and (max-width: 480px) {
+	body[data-page='admin-status-overview'] .cbi-title .label {
+		line-height: 3em;
 	}
 }
+
+/* Slightly fade "show" button: no variable for disabled opacity like luci-theme-bootstrap, assuming 0.7 */
+body[data-page='admin-status-overview'] .cbi-title .label.notice {
+	opacity: 0.7;
+}
+
+/* Remove fade when hovered */
+body[data-page='admin-status-overview'] .cbi-title .label.notice:hover {
+	opacity: initial;
+}
+
+/* === END STATUS OVERVIEW: HIDE/SHOW BUTTONS === */
+
+/* === STATUS OVERVIEW: FIX BOX SPACING === */
+
+/* Resolve mismatched spacing for each heading in box, fixing spacing for when contents are hidden and adding spacing when contents are shown */
+body[data-page='admin-status-overview'] .cbi-section {
+	padding-top: 1rem;
+}
+body[data-page='admin-status-overview'] .cbi-title h3 {
+	padding: 1rem 0 0 0;
+	margin: 0;
+	align-items: center;
+}
+body[data-page='admin-status-overview'] .cbi-section > div:last-child {
+		padding-top: 1rem;
+}
+body[data-page='admin-status-overview'] .cbi-section > div:empty {
+		display: none;
+}
+
+/* Looks like there's a tablet mode also done for 1600px, need to fix spacing changes for that too */
+@media screen and (max-width: 1600px) {
+	body[data-page='admin-status-overview'] .cbi-section {
+		padding-top: 0.5rem;
+	}
+	body[data-page='admin-status-overview'] .cbi-title h3 {
+		padding-top: 0.5rem;
+	}
+}
+
+/* === END STATUS OVERVIEW: FIX BOX SPACING === */
+
+/* === STATUS OVERVIEW: MATCH IFACEBOX COLOUR WITH HEADER === */
+
+/* Set text to header colour when using the header colour background to match same behaviour, for e.g. IPv4 Upstream and IPv6 Upstream boxes */
+body[data-page='admin-status-overview'] .ifacebox-head {
+  color: var(--header-color);
+}
+
+/* === END STATUS OVERVIEW: MATCH IFACEBOX COLOUR WITH HEADER === */

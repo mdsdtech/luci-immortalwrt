@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-08-21 22:06+0200\n"
-"PO-Revision-Date: 2025-01-29 18:02+0000\n"
-"Last-Translator: Alvaro Samudio <alvarosamudio1@gmail.com>\n"
+"PO-Revision-Date: 2026-03-30 03:54+0000\n"
+"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstransmission/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:65
 msgid "Alternative download speed"
@@ -160,7 +160,7 @@ msgstr "Activar carpeta incompleta"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:150
 msgid "Info"
-msgstr "Info"
+msgstr "Informe"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:144
 msgid "LPD enabled"
@@ -198,7 +198,7 @@ msgstr "Apagado"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:38
 msgid "Open Web Interface"
-msgstr "Interfaz Open Web"
+msgstr "Abrir interfaz web"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:153
 msgid "PEX enabled"
@@ -218,7 +218,7 @@ msgstr "Límite por torrent"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:193
 msgid "Peer port"
-msgstr "Puerto"
+msgstr "Puerto de pares"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:198
 msgid "Peer port random high"
@@ -238,7 +238,7 @@ msgstr "Configuración de peer"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:187
 msgid "Peer socket <abbr title=\"Type of Service\">TOS</abbr>"
-msgstr "Par zócalo <abbr title=\"Type of Service\">TOS</abbr>"
+msgstr "Par socket <abbr title=\"Type of Service\">TOS</abbr>"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:204
 msgid "Port forwarding enabled"
@@ -389,18 +389,12 @@ msgid "Speed limit up enabled"
 msgstr "Activar velocidad máxima"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:179
-msgid ""
-"This is documented on <a href=\"https://www.irif.fr/~jch/software/bittorrent/"
-"tcp-congestion-control.html\" target=\"_blank\" rel=\"noreferrer noopener"
-"\">tcp-congestion-control</a>."
-msgstr ""
-"Esto está documentado en <a href=\"https://www.irif.fr/~jch/software/"
-"bittorrent/tcp-congestion-control.html\" target=\"_blank\" rel=\"noreferrer "
-"noopener\">tcp-congestion-control</a>."
+msgid "This is documented on %s."
+msgstr "Esto está documentado en %s."
 
 #: applications/luci-app-transmission/root/usr/share/luci/menu.d/luci-app-transmission.json:3
 msgid "Transmission"
-msgstr "Transmisión"
+msgstr "Transmission"
 
 #: applications/luci-app-transmission/htdocs/luci-static/resources/view/transmission.js:42
 msgid ""
@@ -439,8 +433,11 @@ msgstr "en minutos para la media noche"
 msgid "uTP enabled"
 msgstr "Activar uTP"
 
-#~ msgid "Forced"
-#~ msgstr "Forzado"
-
-#~ msgid "Peer socket tos"
-#~ msgstr "Par socket tos"
+#~ msgid ""
+#~ "This is documented on <a href=\"https://www.irif.fr/~jch/software/"
+#~ "bittorrent/tcp-congestion-control.html\" target=\"_blank\" "
+#~ "rel=\"noreferrer noopener\">tcp-congestion-control</a>."
+#~ msgstr ""
+#~ "Esto está documentado en <a href=\"https://www.irif.fr/~jch/software/"
+#~ "bittorrent/tcp-congestion-control.html\" target=\"_blank\" "
+#~ "rel=\"noreferrer noopener\">tcp-congestion-control</a>."

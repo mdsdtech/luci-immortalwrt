@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-23 12:34+0000\n"
+"PO-Revision-Date: 2026-01-27 15:52+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsemail/sv/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:248
 msgid ""
@@ -54,11 +54,11 @@ msgstr "Avancerade inställningar"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:50
 msgid "Allow connections from the public internet."
-msgstr ""
+msgstr "Tillåt anslutningar från offentligt internet."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:49
 msgid "Allow remote clients"
-msgstr ""
+msgstr "Tillåt fjärrklienter"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:59
 msgid "Anonymous"
@@ -66,11 +66,11 @@ msgstr "Anonym"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:78
 msgid "Auth file"
-msgstr ""
+msgstr "Autentiseringsfil"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:69
 msgid "By default, the local hostname is used."
-msgstr ""
+msgstr "Som standard så används det lokala värdnamnet."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:124
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:201
@@ -79,11 +79,11 @@ msgstr "CA-certifikat"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:157
 msgid "Client authorization file"
-msgstr ""
+msgstr "Klientens autentiseringsfil"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:92
 msgid "Configure <a %s>acme.sh to issue a TLS cert</a>."
-msgstr ""
+msgstr "Konfigurera <a %s>acme.sh för att utfärda ett TLS-cert</a>."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:247
 msgid "DNSBL"
@@ -105,11 +105,11 @@ msgstr "T.ex."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:10
 msgid "Email Server Configuration"
-msgstr ""
+msgstr "Konfiguration för e-postserver"
 
 #: applications/luci-app-email/root/usr/share/luci/menu.d/luci-app-email.json:3
 msgid "Email server"
-msgstr ""
+msgstr "E-postserver"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:214
 msgid "Enable POP3"
@@ -117,23 +117,23 @@ msgstr "Aktivera POP3"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:170
 msgid "Enable SMTP client TLS"
-msgstr ""
+msgstr "Aktivera SMTP-klient för TLS"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:90
 msgid "Enable TLS for server"
-msgstr ""
+msgstr "Aktivera TLS för servern"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:52
 msgid "Enable ports in firewall."
-msgstr ""
+msgstr "Aktivera portar i brandvägg."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:27
 msgid "Enabled"
-msgstr "Aktiverat"
+msgstr "Aktiverad"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:281
 msgid "Extra command line options"
-msgstr ""
+msgstr "Extra kommandoradsalternativ"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:272
 msgid "Filter"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:16
 msgid "Instance config"
-msgstr ""
+msgstr "Instansens konfig"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:140
 msgid "Instead, use a mounted disk with enough of space."
@@ -171,7 +171,7 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:36
 msgid "Manual command line options (deprecated)"
-msgstr ""
+msgstr "Manuella kommandoradsalternativ (föråldrad)"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:30
 msgid "Mode"
@@ -191,11 +191,11 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:225
 msgid "POP Auth file"
-msgstr ""
+msgstr "Auth-fil för POP"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:236
 msgid "POP by name"
-msgstr ""
+msgstr "POP efter namn"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:24
 msgid "POP3"
@@ -204,12 +204,12 @@ msgstr "POP3"
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:114
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:192
 msgid "Path to TLS cert."
-msgstr ""
+msgstr "Genväg till TLS-cert."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:103
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:182
 msgid "Path to TLS private key."
-msgstr ""
+msgstr "Genväg till privat TLS-nyckel."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:35
 msgid ""
@@ -233,35 +233,35 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:23
 msgid "SMTP Client"
-msgstr ""
+msgstr "SMTP-klient"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:40
 msgid "SMTP Port"
-msgstr ""
+msgstr "SMTP-port"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:41
 msgid "SMTP Port to listen for incoming emails."
-msgstr ""
+msgstr "SMTP-port att lyssna på för inkommande e-post."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:22
 msgid "SMTP Server"
-msgstr ""
+msgstr "SMTP-server"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:61
 msgid "See <a %s>--anonymous</a>"
-msgstr ""
+msgstr "See <a %s>--anonym</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:70
 msgid "See <a %s>--domain</a>"
-msgstr ""
+msgstr "Se <a %s>--domain</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:274
 msgid "See <a %s>--filter</a>"
-msgstr ""
+msgstr "Se <a %s>--filter</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:53
 msgid "See <a %s>--remote-clients</a>"
-msgstr ""
+msgstr "Se <a %s>--remote-clients</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:264
 msgid "See <a %s>Address verification</a>"
@@ -270,11 +270,11 @@ msgstr ""
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:80
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:159
 msgid "See <a %s>Authentication</a>"
-msgstr ""
+msgstr "Se <a %s>Autentisering</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:283
 msgid "See <a %s>Command line reference</a>"
-msgstr ""
+msgstr "Se <a %s>Kommandoradsreferens</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:254
 msgid "See <a %s>Connection blocking</a>"
@@ -286,19 +286,19 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:216
 msgid "See <a %s>Running as a POP server</a>"
-msgstr ""
+msgstr "Se <a %s>Körs som en POP-server</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:94
 msgid "See <a %s>TLS encryption</a>"
-msgstr ""
+msgstr "Se <a %s>TLS-kryptering</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:172
 msgid "See example for <a %s>Gmail</a>"
-msgstr ""
+msgstr "Se exempel för <a %s>Gmail</a>"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:79
 msgid "Server/proxy authorization file."
-msgstr ""
+msgstr "Autentiseringsfil för Server/proxy."
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:34
 msgid "Server: receive incoming mail"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:149
 msgid "Smarthost"
-msgstr ""
+msgstr "Smartvärd"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:68
 msgid "Specifies the server's domain name that is used in SMTP EHLO."
@@ -325,12 +325,12 @@ msgstr ""
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:113
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:191
 msgid "TLS certificate"
-msgstr ""
+msgstr "TLS-certifikat"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:102
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:181
 msgid "TLS private key"
-msgstr ""
+msgstr "Privat nyckel TLS"
 
 #: applications/luci-app-email/htdocs/luci-static/resources/view/email/emailrelay.js:215
 msgid "The POP3 used to fetch a mail."

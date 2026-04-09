@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-22 09:21+0000\n"
+"PO-Revision-Date: 2025-04-22 05:24+0000\n"
 "Last-Translator: Abdul Muizz Bin Abdul Jalil <abmuizz@gmail.com>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/openwrt/"
 "lucimodulesluci-mod-dashboard/ms/>\n"
@@ -10,217 +10,217 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:163
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:160
 msgid "Active"
 msgstr "Aktif"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:317
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:350
 msgid "Architecture"
-msgstr "seni bina"
+msgstr "Seni bina"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:181
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:178
 msgid "BSSID"
-msgstr ""
+msgstr "BSSID"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:175
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:172
 msgid "Bitrate"
 msgstr "Kadar bit"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:169
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:166
 msgid "Channel"
-msgstr ""
+msgstr "Saluran"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:186
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:226
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:217
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:257
 msgid "Connected"
-msgstr ""
+msgstr "Bersambung"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:13
 msgid "DHCP Devices"
-msgstr ""
+msgstr "Peranti DHCP"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:216
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:247
 msgid "DNSv4"
-msgstr ""
+msgstr "DNSv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:262
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:293
 msgid "DNSv6"
-msgstr ""
+msgstr "DNSv6"
 
 #: modules/luci-mod-dashboard/root/usr/share/luci/menu.d/luci-mod-dashboard.json:3
 msgid "Dashboard"
-msgstr ""
+msgstr "Papan pemuka"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:134
-msgid "Devices"
-msgstr ""
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:193
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:190
 msgid "Devices Connected"
-msgstr ""
+msgstr "Peranti Bersambung"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Down."
-msgstr ""
+msgstr "Muat tur."
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:129
-msgid "Download"
-msgstr "Muat turun"
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:187
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:184
 msgid "Encryption"
-msgstr ""
+msgstr "Penyulitan"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:322
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:355
 msgid "Firmware Version"
-msgstr ""
+msgstr "Versi Perisian Tegar"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:171
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:168
 msgid "GHz"
-msgstr ""
+msgstr "GHz"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:210
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:241
 msgid "GatewayV4"
-msgstr ""
+msgstr "Get laluanV4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:256
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:287
 msgid "GatewayV6"
-msgstr ""
+msgstr "Get laluanV6"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:25
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:26
 msgid "Grant access to DHCP status display"
-msgstr ""
+msgstr "Berikan akses kepada paparan status DHCP"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:12
 msgid "Grant access to main status display"
-msgstr ""
+msgstr "Berikan akses kepada paparan status utama"
 
 #: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:3
 msgid "Grant access to the system route status"
-msgstr ""
+msgstr "Berikan akses kepada status laluan sistem"
 
-#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:34
+#: modules/luci-mod-dashboard/root/usr/share/rpcd/acl.d/luci-mod-dashboard.json:35
 msgid "Grant access to wireless status display"
-msgstr ""
+msgstr "Berikan akses kepada paparan status wayarles"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:30
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:225
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:39
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:81
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:222
 msgid "Hostname"
 msgstr "Nama hos"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:31
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:40
 msgid "IP Address"
-msgstr ""
+msgstr "Alamat IP"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:204
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:114
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:235
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:183
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:214
 msgid "IPv4 Internet"
-msgstr ""
+msgstr "Internet IPv4"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:250
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:281
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:223
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:254
 msgid "IPv6 Internet"
-msgstr ""
+msgstr "Internet IPv6"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:244
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:275
 msgid "IPv6 prefix"
-msgstr ""
+msgstr "Awalan IPv6"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:69
 msgid "Internet"
-msgstr ""
+msgstr "Internet"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:307
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:340
 msgid "Kernel Version"
-msgstr ""
+msgstr "Versi kernel"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:302
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:335
 msgid "Local Time"
-msgstr ""
+msgstr "Waktu Tempatan"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:32
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:41
 msgid "MAC"
-msgstr ""
+msgstr "MAC"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:119
-msgid "Mac"
-msgstr ""
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:177
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:174
 msgid "Mbit/s"
-msgstr ""
+msgstr "Mbit/s"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:312
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:345
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:162
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:169
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:193
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:200
 msgid "Not connected"
-msgstr ""
+msgstr "Tak bersambung"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:198
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:238
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:229
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:269
 msgid "Protocol"
 msgstr "Protokol"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:157
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:231
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:82
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:154
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:228
 msgid "SSID"
-msgstr ""
+msgstr "SSID"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:85
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:83
 msgid "Signal Strength"
-msgstr ""
+msgstr "Kekuatan Isyarat"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:237
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:234
 msgid "Strength"
-msgstr ""
+msgstr "Kekuatan"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:33
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:69
 msgid "System"
+msgstr "Sistem"
+
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:80
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:128
+msgid "Total"
 msgstr ""
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:247
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:244
 msgid "Transferred"
-msgstr ""
+msgstr "Dipindahkan"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:86
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:84
 msgid "Up."
-msgstr ""
+msgstr "Muat naik"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/20_lan.js:124
-msgid "Upload"
-msgstr ""
-
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:192
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:232
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:297
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:223
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:263
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:330
 msgid "Uptime"
-msgstr ""
+msgstr "Masa hidup"
 
 #: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:9
 msgid "Wireless"
-msgstr ""
+msgstr "Wayarles"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:102
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:62
 msgid "no"
 msgstr "tidak"
 
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:67
-#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:65
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/10_router.js:102
+#: modules/luci-mod-dashboard/htdocs/luci-static/resources/view/dashboard/include/30_wifi.js:62
 msgid "yes"
 msgstr "ya"
+
+#~ msgid "Devices"
+#~ msgstr "Peranti"
+
+#~ msgid "Download"
+#~ msgstr "Muat turun"
+
+#~ msgid "Mac"
+#~ msgstr "Mac"
+
+#~ msgid "Upload"
+#~ msgstr "Muat naik"

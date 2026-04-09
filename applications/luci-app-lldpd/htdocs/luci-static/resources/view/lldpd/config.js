@@ -18,8 +18,8 @@ const callInitList = rpc.declare({
 	method: 'getInitList',
 	params: [ 'name' ],
 	expect: { '': {} },
-	filter: function(res) {
-		for (var k in res)
+	filter(res) {
+		for (let k in res)
 			return +res[k].enabled;
 		return null;
 	}
@@ -32,7 +32,7 @@ const callInitAction = rpc.declare({
 	expect: { result: false }
 });
 
-var usage = _('See syntax <a %s>here</a>.').format('href=https://lldpd.github.io/usage.html target="_blank"');
+const usage = _('See syntax <a %s>here</a>.').format('href=https://lldpd.github.io/usage.html target="_blank"');
 
 const validateioentries = function(section_id, value) {
 	if (value) {
@@ -40,8 +40,8 @@ const validateioentries = function(section_id, value) {
 		const a = value.split(' ');
 		const noex = a.filter(el=> !el.startsWith('!'));
 		const ex = a.filter(el=> el.startsWith('!') && !el.startsWith('!!'));
-		for (var i of noex) {
-			for (var e of ex) {
+		for (let i of noex) {
+			for (let e of ex) {
 				if ('!'+i == e){
 					return emsg.format(i, e);
 				}
@@ -52,24 +52,24 @@ const validateioentries = function(section_id, value) {
 };
 
 return L.view.extend({
-	__init__: function() {
+	__init__() {
 		this.super('__init__', arguments);
 
 		// Inject CSS
-		var head = document.getElementsByTagName('head')[0];
-		var css = E('link', { 'href':
+		const head = document.getElementsByTagName('head')[0];
+		const css = E('link', { 'href':
 			L.resource('lldpd/lldpd.css')
 				+ '?v=#PKG_VERSION', 'rel': 'stylesheet' });
 
 		head.appendChild(css);
 	},
 
-	load: function() {
+	load() {
 		return Promise.all([
+			network.getDevices(),
 			callInitList('lldpd'),
 			lldpd.init(),
 			uci.load('lldpd'),
-			network.getDevices()
 		]);
 	},
 
@@ -80,10 +80,8 @@ return L.view.extend({
 	// -----------------------------------------------------------------------------------------
 
 	/** @private */
-	populateBasicOptions: function(s, tab, data) {
-		var o;
-		var serviceEnabled = data[0];
-		var net_devices = data[3];
+	populateBasicOptions(s, tab, [net_devices, serviceEnabled]) {
+		let o;
 
 		// Service enable/disable
 		o = s.taboption(tab, form.Flag, 'enabled', _('Enable service'));
@@ -99,13 +97,13 @@ return L.view.extend({
 
 			if (value == '1') {
 				// Enable and start
-				callInitAction('lldpd', 'enable').then(function() {
+				callInitAction('lldpd', 'enable').then(() => {
 					return callInitAction('lldpd', 'start');
 				});
 			}
 			else {
 				// Stop and disable
-				callInitAction('lldpd', 'stop').then(function() {
+				callInitAction('lldpd', 'stop').then(() => {
 					return callInitAction('lldpd', 'disable');
 				});
 			}
@@ -128,7 +126,7 @@ return L.view.extend({
 		/* This function returns the value for a specified key. Used to fill 
 		various location fields derived from an lldpd location config string */
 		function getLocationValueFromConfString(_key) {
-			var inStr = this ? this.section.formvalue('config', 'lldp_location'):
+			let inStr = this ? this.section.formvalue('config', 'lldp_location'):
 				uci.get('lldpd', 'config', 'lldp_location');
 			inStr = inStr ? inStr: '';
 
@@ -152,17 +150,17 @@ return L.view.extend({
 		};
 
 		function write_lldp_location() {
-			var _input = this ? this.section.formvalue('config', '_lldp_location_type'):
+			const _input = this ? this.section.formvalue('config', '_lldp_location_type'):
 				'1';
 
 			if(_input){
 				if (_input == '1') {
 					/* location coordinate latitude
 					48.85667N longitude 2.2014E altitude 117.47 m datum WGS84 */
-					var lat = this.section.formvalue('config', '_coordinate_lat'),
-					    lon = this.section.formvalue('config', '_coordinate_lon'),
-					    alt = this.section.formvalue('config', '_coordinate_alt'),
-					    dat = this.section.formvalue('config', '_coordinate_dat');
+					const lat = this.section.formvalue('config', '_coordinate_lat');
+					const lon = this.section.formvalue('config', '_coordinate_lon');
+					const alt = this.section.formvalue('config', '_coordinate_alt');
+					const dat = this.section.formvalue('config', '_coordinate_dat');
 					if(lat && lon && dat) {
 						uci.set('lldpd', 'config', 'lldp_location',
 							'coordinate latitude ' + lat +
@@ -174,12 +172,12 @@ return L.view.extend({
 				else if (_input == '2') {
 					/* location address country US
 						street "Commercial Road" city "Roseville" */
-					var cc = this.section.formvalue('config', '_civic_cc'),
-					    city = this.section.formvalue('config', '_civic_city'),
-					    str = this.section.formvalue('config', '_civic_str'),
-					    bldg = this.section.formvalue('config', '_civic_bldg'),
-					    nmbr = this.section.formvalue('config', '_civic_nmbr'),
-					    zip = this.section.formvalue('config', '_civic_zip');
+					const cc = this.section.formvalue('config', '_civic_cc');
+					const city = this.section.formvalue('config', '_civic_city');
+					const str = this.section.formvalue('config', '_civic_str');
+					const bldg = this.section.formvalue('config', '_civic_bldg');
+					const nmbr = this.section.formvalue('config', '_civic_nmbr');
+					const zip = this.section.formvalue('config', '_civic_zip');
 
 					uci.set('lldpd', 'config', 'lldp_location',
 						'address country ' + cc.toUpperCase()
@@ -191,7 +189,7 @@ return L.view.extend({
 				}
 				else if (_input == '3') {
 					/* location elin 12345 */
-					var elin = this.section.formvalue('config', '_elin');
+					const elin = this.section.formvalue('config', '_elin');
 					if(elin)
 						uci.set('lldpd', 'config', 'lldp_location', 'elin ' + elin);
 				}
@@ -228,9 +226,9 @@ return L.view.extend({
 		o.rmempty = true;
 		o.write = function(section_id, value) {
 			if (value) {
-				const words = value.trim().split(/\s+/),
-				      regex = /^coordinate|^address|^elin/;
-				var start;
+				const words = value.trim().split(/\s+/);
+				const regex = /^coordinate|^address|^elin/;
+				let start;
 				words.forEach(w=>{
 					if (w.match(regex)) start = w;
 				});
@@ -241,9 +239,9 @@ return L.view.extend({
 		};
 		o.validate = function(section_id, value) {
 			if (value) {
-				const words = value.trim().split(/\s+/),
-				      regex = /^coordinate|^address|^elin/;
-				var _eval = _("Must contain: 'coordinate ...', 'address ...' or 'elin ...'");
+				const words = value.trim().split(/\s+/);
+				const regex = /^coordinate|^address|^elin/;
+				let _eval = _("Must contain: 'coordinate ...', 'address ...' or 'elin ...'");
 				words.forEach(w=>{
 					if (w.match(regex)) _eval = true;
 				});
@@ -259,7 +257,7 @@ return L.view.extend({
 		o.datatype = "maxlength(20)";
 		o.validate = function(section_id, value) {
 			if (!value) return true;
-			var valid = _('valid syntax: 0 .. 90.000[N|S]');
+			let valid = _('valid syntax: 0 .. 90.000[N|S]');
 			valid = (parseFloat(value) >= 0 && parseFloat(value) <= 90) ?
 				/^-?\d+(?:\.\d+)?[NnSs]$/.test(value) ? true : valid : valid;
 			return valid;
@@ -275,7 +273,7 @@ return L.view.extend({
 		o.datatype = "maxlength(20)";
 		o.validate = function(section_id, value) {
 			if (!value) return true;
-			var valid = _('valid syntax: 0 .. 180.000[E|W]');
+			let valid = _('valid syntax: 0 .. 180.000[E|W]');
 			valid = (parseFloat(value) >= 0 && parseFloat(value) <= 180) ?
 				/^-?\d+(?:\.\d+)?[WwEe]$/.test(value) ? true : valid : valid;
 			return valid;
@@ -285,17 +283,17 @@ return L.view.extend({
 		}
 		o.write = write_lldp_location;
 
-		const min_alt = -100000.00,
-		      max_alt = 42849672.95;
+		const min_alt = -100000.00;
+		const max_alt = 42849672.95;
 		o = s.taboption(tab, form.Value, '_coordinate_alt',
 			_('Altitude'), '%f .. %f [m|f]'.format(min_alt, max_alt));
 		o.depends({ '_lldp_location_type' : '1'});
 		o.datatype = 'maxlength(20)';
 		o.validate = function(section_id, value) {
 			if (!value) return true;
-			var valid = _('valid syntax: %f .. %f [mf]').format(min_alt, max_alt);
+			let valid = _('valid syntax: %f .. %f [mf]').format(min_alt, max_alt);
 			valid = (parseFloat(value) >= min_alt && parseFloat(value) <=  max_alt) ?
-				/^-?\d+(?:\.\d+)?\ [mf]$/.test(value) ? true : valid : valid;
+				/^-?\d+(?:\.\d+)? [mf]$/.test(value) ? true : valid : valid;
 			return valid;
 		}
 		o.load = function(section_id, value) {
@@ -324,7 +322,7 @@ return L.view.extend({
 		o.placeholder = 'EU';
 		o.validate = function(section_id, value) {
 			if(!value) return true;
-			var valid = _('Two character CC required');
+			let valid = _('Two character CC required');
 			valid = (value.length == 2) ?
 				/^[A-Z]{2}$/i.test(value) ? true : valid : valid;
 			return valid;
@@ -442,6 +440,7 @@ return L.view.extend({
 			  'blacklist IPv6 addresses, use <code>!*:*</code>.') + '<br />' +
 			  usage);
 		o.placeholder = 'Addresses and interfaces';
+		o.optional = true;
 		o.depends({lldp_mgmt_addr_advertisements: '1'});
 		o.cfgvalue = function(section_id) {
 			const opt = uci.get(this.config, section_id, this.option);
@@ -516,9 +515,8 @@ return L.view.extend({
 	// -----------------------------------------------------------------------------------------
 
 	/** @private */
-	populateIfacesOptions: function(s, tab, data) {
-		var o;
-		var net_devices = data[3];
+	populateIfacesOptions(s, tab, [net_devices, serviceEnabled]) {
+		let o;
 
 		// Interfaces to listen on
 		// This value: lldpd.init handles as a list value, and produces a CSV for lldpd.conf: 'configure system interface pattern'
@@ -544,6 +542,7 @@ return L.view.extend({
 			  'Absent any value, all interfaces are considered. ' +
 			  'LLDPd takes the first MAC address from all the considered ' +
 			  'interfaces to compute the chassis ID.'));
+		o.optional = true;
 
 		o.value('*');
 		o.value('!*');
@@ -564,8 +563,8 @@ return L.view.extend({
 	// -----------------------------------------------------------------------------------------
 
 	/** @private */
-	populateAdvancedOptions: function(s, tab, data) {
-		var o;
+	populateAdvancedOptions(s, tab, {net_devices, serviceEnabled}) {
+		let o;
 
 		// SNMP agentX socket
 		/* **Note**: The init file tests for SNMP support, so agentxsocket is at worst inert. */
@@ -691,11 +690,11 @@ return L.view.extend({
 	// -----------------------------------------------------------------------------------------
 
 	/** @private */
-	populateProtocolsOptions: function(s, tab, data) {
-		var o;
+	populateProtocolsOptions(s, tab, {net_devices, serviceEnabled}) {
+		let o;
 
 		o = s.taboption(tab, form.SectionValue, '_protocols', form.TypedSection, 'lldpd');
-		var ss = o.subsection;
+		let ss = o.subsection;
 		ss.anonymous = true;
 		ss.addremove = false;
 
@@ -828,15 +827,180 @@ return L.view.extend({
 		o.depends('enable_sonmp', '1');
 	},
 
+	// -----------------------------------------------------------------------------------------
+	//
+	//   Extra TLV
+	//
+	// -----------------------------------------------------------------------------------------
+
 	/** @private */
-	populateOptions: function(s, data) {
-		var o;
+	populateExtraTLVOptions(s, tab, [net_devices, serviceEnabled]) {
+		let o, ss, oo;
+
+		///// Custom TLV
+		// # syntax: [add | replace] oui OUI subtype SUBTYPE [oui-info CONTENT]
+		/////
+
+		o = s.taboption(tab, form.SectionValue, '_tlv_', form.TableSection, 'custom-tlv', _('Custom TLV'), 
+			_('TLV that lack network interfaces here are sent according to <code>interface pattern</code> (Network IO under Network Interfaces).') + '<br/>' +
+			_('Default insert behaviour is add.'));
+		ss = o.subsection;
+		ss.anonymous = true;
+		ss.sortable = true;
+		ss.addremove = true;
+		ss.rowcolors = true;
+		ss.addbtntitle = _('Add Custom TLV', 'lldpd Custom TLV');
+		oo = ss.option(lldpd.CBIMultiIOSelect, 'ports',
+			_('Network Interface(s)'));
+		oo.optional = true;
+		net_devices.forEach(nd => {
+			oo.value(nd.getName());
+			oo.value('!'+nd.getName());
+		});
+		oo.validate = validateioentries;
+
+		const validateHexBytes = (str, length) => str.split(',').length === length && str.split(',').every(byte => /^[0-9a-f]{2}$/i.test(byte));
+
+		function parse_custom_tlv_string(input) {
+			//[add | replace] oui OUI subtype SUBTYPE [oui-info CONTENT]
+			const pattern = /^(add|replace)?\s*oui\s+([0-9a-f]{2}(?:,[0-9a-f]{2})*)\s+subtype\s+([0-9a-f]{2})(?:\s+oui-info\s+([0-9a-f]{2}(?:,[0-9a-f]{2})*))?$/i;
+			const match = input.match(pattern);
+
+			if (!match) return null;
+
+			const [, action = '', ouidata, subtype, content = ''] = match;
+
+			if (!validateHexBytes(ouidata, 3) || (content && !validateHexBytes(content, content.split(',').length))) {
+				return null;
+			}
+
+			return { action, ouidata, subtype, content };
+		}
+
+		function load_custom_tlv(section_id, part) {
+			const tlv = uci.get('lldpd', section_id, 'tlv')?.trim().toLowerCase();
+			if (!tlv) return '';
+
+			const parsed = parse_custom_tlv_string(tlv);
+			if (!parsed) return '';
+
+			switch (part) {
+			case 'cust_act': return parsed.action;
+			case 'cust_oui': return parsed.ouidata;
+			case 'cust_typ': return parsed.subtype;
+			case 'cust_inf': return parsed.content;
+			default: return tlv;
+			}
+		}
+
+		function write_custom_tlv(section_id) {
+			const formValue = (part) => this.section.formvalue(section_id, part) || '';
+
+			const action = formValue('_cust_act');
+			const ouidata = formValue('_cust_oui');
+			const subtype = formValue('_cust_typ');
+			const content = formValue('_cust_inf');
+
+			const tlvParts = [
+				action,
+				ouidata && `oui ${ouidata}`,
+				subtype && `subtype ${subtype}`,
+				content && `oui-info ${content}`
+			].filter(Boolean).join(' ');
+
+			uci.set(this.config, section_id, 'tlv', tlvParts);
+		} 
+
+		function intToHexStr(int, uc) {
+			// return 00-FF for 0-255 int
+			const str = int.toString(16).padStart(2, '0');
+			return uc ? str.toUpperCase() : str;
+		} 
+
+		function validate_custom_tlv_string_format(section_id, input) {
+			if (!input) return true;
+			return parse_custom_tlv_string(input) ? true : _('Invalid TLV string format');
+		}
+
+		// action
+		oo = ss.option(form.ListValue, '_cust_act', _('Behaviour'));
+		oo.value('', _('default'));
+		oo.value('add', _('add'));
+		oo.value('replace', _('replace'));
+		oo.rmempty = true;
+		oo.write = write_custom_tlv;
+		oo.load = function(section_id) {
+			return load_custom_tlv(section_id, 'cust_act');
+		};
+
+		// OUI
+		oo = ss.option(form.TextValue, '_cust_oui', _('OUI CSV'));
+		oo.validate = function(section_id, value) {
+			if (!validateHexBytes(value, 3))
+				return _('CSV of 3 hex values, e.g. aa,ee,ff');
+			return true;
+		};
+		oo.rmempty = false;
+		oo.width = 150;
+		oo.optional = false;
+		oo.placeholder = '0f,22,4b';
+		oo.write = write_custom_tlv;
+		oo.load = function(section_id) {
+			return load_custom_tlv(section_id, 'cust_oui');
+		};
+
+		// sub-type
+		oo = ss.option(form.ListValue, '_cust_typ', _('Subtype'));
+		const typchoices = Array.from({length: 256}, (_, index) => [index, index + " ("+intToHexStr(index, true)+")"] );
+		typchoices.forEach(v => {
+			oo.value(v[0], v[1]);
+		})
+		oo.rmempty = false;
+		oo.optional = false;
+		oo.write = write_custom_tlv;
+		oo.load = function(section_id) {
+			return load_custom_tlv(section_id, 'cust_typ');
+		};
+
+		// content
+		oo = ss.option(form.TextValue, '_cust_inf', _('Content'));
+		oo.validate = function(section_id, value) {
+			if (!value) return true;
+			if (!validateHexBytes(value, value.split(',').length))
+				return _('CSV of 1 or more hex values, e.g. aa or bb,cc or 11,55,1a');
+			return true;
+		};
+		oo.rmempty = true;
+		oo.optional = true;
+		oo.placeholder = 'ff,00,33';
+		oo.write = write_custom_tlv;
+		oo.load = function(section_id) {
+			return load_custom_tlv(section_id, 'cust_inf');
+		};
+
+		// raw
+		oo = ss.option(form.TextValue, '_raw', _('Raw'));
+		oo.write = function(section_id, value) {
+			uci.set(this.config, section_id, 'tlv', value);
+		};
+		oo.load = function(section_id) {
+			return load_custom_tlv(section_id);
+		};
+		oo.validate = validate_custom_tlv_string_format;
+	},
+
+	/** @private */
+	populateOptions(s, data) {
+		let o;
 
 		s.tab('basic', _('Basic Settings'));
 		this.populateBasicOptions(s, 'basic', data);
 
 		s.tab('ifaces', _('Network Interfaces'));
 		this.populateIfacesOptions(s, 'ifaces', data);
+
+		s.tab('tlvtab', _('TLV'));
+		this.populateExtraTLVOptions(s, 'tlvtab', data);
 
 		s.tab('advanced', _('Advanced Settings'));
 		this.populateAdvancedOptions(s, 'advanced', data);
@@ -845,8 +1009,8 @@ return L.view.extend({
 		this.populateProtocolsOptions(s, 'protocols', data);
 	},
 
-	render: function(data) {
-		var m, s;
+	render(data) {
+		let m, s;
 
 		m = new form.Map('lldpd', _('LLDPd Settings'),
 			_('LLDPd is an implementation of IEEE 802.1ab') + ' ' +

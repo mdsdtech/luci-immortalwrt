@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-13 20:54+0000\n"
+"PO-Revision-Date: 2025-05-08 13:01+0000\n"
 "Last-Translator: hmzs <hmzs@1szer1.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnut/hu/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:16
 msgid "%s is mutually exclusive to other choices"
@@ -158,11 +158,15 @@ msgstr "Ugrás a NUT CGI-hez"
 
 #: applications/luci-app-nut/root/usr/share/rpcd/acl.d/luci-app-nut.json:3
 msgid "Grant UCI access for luci-app-nut"
-msgstr ""
+msgstr "UCI hozzáférés engedélyezése a <em>luci-app-nut</em> alkalmazásnak"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:17
 msgid "Host"
 msgstr "Gép"
+
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
+msgid "Host Sync"
+msgstr ""
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_cgi.js:24
 msgid "Hostname or IP address"
@@ -172,10 +176,6 @@ msgstr "Gépnév vagy IP-cím"
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:188
 msgid "Hostname or address of UPS"
 msgstr "A UPS gépneve vagy címe"
-
-#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:69
-msgid "Hot Sync"
-msgstr "Forró szinkronizálás"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:68
 msgid "IP Address"
@@ -517,6 +517,15 @@ msgstr "Egyidejű kommunikáció"
 msgid "The name of this section will be used as UPS name elsewhere"
 msgstr "A munkamenet neve lesz használva UPS névként máshol"
 
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:157
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:193
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:196
+#: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:247
+msgid ""
+"This is passed through to the driver, so make sure your driver supports this "
+"option"
+msgstr ""
+
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:125
 msgid "Time in seconds between driver start retry attempts."
 msgstr ""
@@ -589,7 +598,7 @@ msgstr "Gyártó (reguláris kifejezés)"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_monitor.js:146
 msgid "Verify all connection with SSL"
-msgstr "Az összes SSL-lel rendelkező kapcsolat ellenőrzése"
+msgstr "Minden SSL-lel rendelkező kapcsolat ellenőrzése"
 
 #: applications/luci-app-nut/htdocs/luci-static/resources/view/nut/nut_server.js:184
 msgid "Workaround for buggy firmware"
@@ -611,9 +620,5 @@ msgstr ""
 msgid "upsmon drops privileges to this user"
 msgstr "Az upsmon jogosultságokat dob a felhasználónak"
 
-#~ msgid "NUT CGI Access"
-#~ msgstr "NUT CGI hozzáférés"
-
-#, fuzzy
-#~ msgid "Maxium Start Delay"
-#~ msgstr "Legnagyobb indítási késleltetés"
+#~ msgid "Hot Sync"
+#~ msgstr "Forró szinkronizálás"

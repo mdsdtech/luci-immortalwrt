@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-17 17:11+0000\n"
+"PO-Revision-Date: 2026-03-09 19:10+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@gmail.com>\n"
 "Language-Team: Irish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationscloudflared/ga/>\n"
 "Language: ga\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :("
-"n>6 && n<11) ? 3 : 4;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :(n>"
+"6 && n<11) ? 3 : 4;\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:89
 msgid "All"
@@ -54,8 +54,8 @@ msgid ""
 "Create and manage your network on the <a %s>Cloudflare Zero Trust</a> "
 "dashboard."
 msgstr ""
-"Cruthaigh agus bainistigh do líonra ar an deais <a%s>Cloudflare Zero "
-"Trust</a>."
+"Cruthaigh agus bainistigh do líonra ar an deais <a%s>Cloudflare Zero Trust</"
+"a>."
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/tunnels.js:53
 msgid "Created At"
@@ -105,7 +105,7 @@ msgstr "ID"
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/config.js:96
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:90
 msgid "Info"
-msgstr "Faisnéis"
+msgstr "Eolas"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/log.js:85
 #: applications/luci-app-cloudflared/root/usr/share/luci/menu.d/luci-app-cloudflared.json:30
@@ -180,7 +180,7 @@ msgstr ""
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/config.js:62
 msgid "Token"
-msgstr "Ticéad"
+msgstr "Comhartha"
 
 #: applications/luci-app-cloudflared/htdocs/luci-static/resources/view/cloudflared/tunnels.js:96
 #: applications/luci-app-cloudflared/root/usr/share/luci/menu.d/luci-app-cloudflared.json:22
